@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --orange:#f9713d;
+    --red:#eb3750;
+}
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    padding: 10px;
+}
+.navbars{
+    display: flex;
+    justify-content: center;
+}
+.navbars li{
+    list-style-type: none;
+    padding: 20px;
+}
+
+.navbars li a{
+    text-decoration: none;
+    color: white;
+}
+.navbars li a:hover{
+    color: var(--red);
+}
+.navbars .active{
+    color: var(--red);
+}
+
+#logo{
+ height:80px;
+ width:auto; 
+ border-radius: 50%;
+
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color:white
+}
+#home_welcome{
+    height:  100vh;
+}
+.team{
+    text-align: center;
+}
+.team img{
+    width:auto;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.team .row{
+    justify-content: space-evenly;
+}
+#team_img{
+    box-shadow: 1px 2px 4px 0px var(--red);
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+}
+#team_img span{
+    display: flex;
+   justify-content: space-evenly;
+}
+#team_img i{
+    font-size: 20px;
+}
+
+#contributor{
+    padding: 30px;
+}
+#contributor img{
+    height:200px;
+    width: auto;
+    border-radius: 50%;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>CONTRIBUTORS</title>
+</head>
+<body>
+    <nav>
+        <img id="logo" src="./images/hackclubrait.jpeg">
+        <ul class="navbars">
+            <li><a href="index.html" >HOME</a></li>
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contributer.html" class="active">CONTRIBUTORS</a></li>
+            <li><a href="opportunity.html" >OPPORTUNITIES</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+      <div id="contributor"></div>
+</body>
+<script>
+    const getUsers = () => {
+    const owner = 'Chaitalishetty',
+          repo = 'hackclub-RAIT';
+    axios
+        .get(
+            `https://api.github.com/repos/${owner}/${repo}/contributors`
+        )
+        .then((response) => {
+            var div=document.getElementById("contributor");
+            var elem1 = document.createElement("img");
+            const users = response.data;
+            img_id = users.map(u => u.id);
+            elem1.src="https://avatars.githubusercontent.com/u/"+img_id;
+            div.appendChild(elem1);
+        })
+        .catch((error) => console.error(error));
+};
+getUsers();
+</script>
+</html>

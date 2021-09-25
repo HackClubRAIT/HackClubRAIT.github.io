@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 :root{
     --orange:#f9713d;
     --red:#eb3750;
+    --grey:#252429;
 }
 *,html{
     margin: 0;
@@ -11,6 +13,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    background-color: var(--grey)!important;
 }
 nav{
     display: flex;
@@ -52,7 +55,21 @@ footer{
     padding: 20px;
 }
 #home_welcome{
-    height:  100vh;
+    height:  75vh;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+#home_about{
+    background-color: white;
+    text-align: justify;
+    padding:5%
+}
+#hackclub{
+    font-size:10em;
+    color:var(--red);
+    font-family:  'Londrina Outline', cursive;
+    font-weight: bold;
 }
 .team{
     text-align: center;
@@ -71,6 +88,7 @@ footer{
     margin: 20px;
     justify-content: center;
     text-align: center;
+    background-color: white;
 }
 #team_img span{
     display: flex;

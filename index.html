@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Home</title>
@@ -22,14 +24,22 @@
         </ul>
     </nav>
     <div id="home_welcome">
-        <h1>Welcome to hackclub RAIT
-    </h1>
+        <h1 id="hackclub">HackClub RAIT</h1>
+        <h3> initiative for students by students
+        </h3>
+    </div>
+    <div id="home_about">
+        <h1>About Hackclub</h1><br>
+        <div class="col-6" data-aos="fade-right">
+        <h3>HackClub is a global community of hackers. It is an initiative for students by students. It is a platform that lets you try, break and recreate. After all, you can’t flutter without trembling. With HackClub you get access to a super awesome community of creative, cheerful, and keen students that will help you to share, learn, grow and develop.
+        </h3>
+        </div>
+        
     </div>
     <footer>
         <div class="row">
             <div class="col-6">
                 <div><img src="./images/hackclubrait.jpeg" style="width:50px"><b>HACKCLUB RAIT</b></div>
-                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate enim, alias, vel vero officiis accusantium laborum nostrum nemo, porro perspiciatis a suscipit! Dolor, voluptates fuga aliquid autem nihil quas officia.</h5>
             </div>
             <div class="col-6">
                 <h3>Useful Links</h3>
@@ -49,4 +59,9 @@
         <br><H5 style="margin: 0px;">Made with 💝 by Hackclub RAIT</H5>
     </footer>
 </body>
+<script>    
+    AOS.init({
+      duration: 1200,
+    })
+    </script>
 </html>

@@ -22,12 +22,15 @@
     </nav>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-      <div id="contributor"></div>
+      <div id="contributor">
+          
+      </div>
+      <div id="user"></div>
 </body>
 <script>
     const getUsers = () => {
-    const owner = 'Chaitalishetty',
-          repo = 'hackclub-RAIT';
+    const owner = 'HackClubRAIT',
+          repo = 'HackClubRAIT-Website';
     axios
         .get(
             `https://api.github.com/repos/${owner}/${repo}/contributors`
@@ -37,6 +40,8 @@
             var elem1 = document.createElement("img");
             const users = response.data;
             img_id = users.map(u => u.id);
+            img_user = users.map(u => u.login);
+            document.getElementById("user").innerHTML=`<a href="https://github.com/${img_user}">${img_user}</a>`;
             elem1.src="https://avatars.githubusercontent.com/u/"+img_id;
             div.appendChild(elem1);
         })

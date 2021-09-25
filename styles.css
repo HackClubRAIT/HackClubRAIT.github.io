@@ -48,7 +48,8 @@ nav{
 footer{
     text-align: center;
     background-color: black;
-    color:white
+    color:white;
+    padding: 20px;
 }
 #home_welcome{
     height:  100vh;

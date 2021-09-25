@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif!important;
     overflow-x: hidden;
     background-color: var(--grey)!important;
 }
@@ -54,6 +54,13 @@ footer{
     color:white;
     padding: 20px;
 }
+footer i{
+    font-size: 50px!important;
+    margin: 20px 10px 10px 10px;
+}
+footer a{
+    color: gray;
+}
 #home_welcome{
     height:  75vh;
     color: white;
@@ -65,11 +72,24 @@ footer{
     text-align: justify;
     padding:5%
 }
+.home_illus{
+    width:100%;
+}
 #hackclub{
     font-size:10em;
     color:var(--red);
     font-family:  'Londrina Outline', cursive;
     font-weight: bold;
+}
+#home_rait{
+    text-align: justify;
+    padding:5%;
+    color: white;
+}
+#home_vision{
+    text-align: center;
+    padding:5%;
+    background-color: white;
 }
 .team{
     text-align: center;
@@ -91,11 +111,17 @@ footer{
     background-color: white;
 }
 #team_img span{
-    display: flex;
-   justify-content: space-evenly;
+    display: grid;
+    grid-gap: 10px;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    background-color: var(--orange);
+    padding: 10px;
 }
 #team_img i{
     font-size: 20px;
+    color:var(--grey);
 }
 
 #contributor{

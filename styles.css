@@ -132,3 +132,10 @@ footer a{
     width: auto;
     border-radius: 50%;
 }
+#opp_card{
+    background-color: white;
+    text-align: center;
+    margin: 50px;
+    padding:20px;
+    border-radius: 10px;
+}

@@ -1,3 +1,10 @@
+![134015433-aec59d97-a8d7-407a-88fd-5e3edebc2b77](https://user-images.githubusercontent.com/69195262/135374166-a56824f9-0930-4346-a2f2-2410abc36180.png)
+
+
+# This is the official website of HackClub RAIT
+HackClub RAIT focuses essentially on open-source. 
+Our aim is to flourish the thrilling open-source culture to create a favorable environment for open-source contributions. 
+
 # How to contribute?
 
 **1.**  Fork [this](https://github.com/HackClubRAIT/HackClubRAIT-Website.github.io.git) repository.

@@ -132,6 +132,31 @@ footer a{
     width: auto;
     border-radius: 50%;
 }
+#project_section .row{
+    width: 100vw;
+}
+#projects{
+    background-color: white;
+    color:black;
+    margin:40px;
+    padding:20px;
+    text-align:center;
+    height:auto
+}
+#projects ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+#projects ul li{
+    margin: 10px;
+    padding:10px;
+    background-color: var(--orange);
+    color:white
+}
+.owner{
+    text-decoration: none
+}
 #opp_card{
     background-color: white;
     text-align: center;

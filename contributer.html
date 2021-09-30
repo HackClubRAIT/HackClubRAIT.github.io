@@ -25,7 +25,6 @@
       <div id="contributor">
           
       </div>
-      <div id="user"></div>
 </body>
 <script>
     const getUsers = () => {
@@ -37,13 +36,14 @@
         )
         .then((response) => {
             var div=document.getElementById("contributor");
-            var elem1 = document.createElement("img");
             const users = response.data;
             img_id = users.map(u => u.id);
             img_user = users.map(u => u.login);
-            document.getElementById("user").innerHTML=`<a href="https://github.com/${img_user}">${img_user}</a>`;
-            elem1.src="https://avatars.githubusercontent.com/u/"+img_id;
-            div.appendChild(elem1);
+            for (let i = 0; i < img_id.length; i++) {
+                div.innerHTML+=`<a href="https://github.com/${img_user[i]}" target="_blank_"><img src="https://avatars.githubusercontent.com/u/${img_id[i]}"/></a>`;
+
+            }
+           
         })
         .catch((error) => console.error(error));
 };

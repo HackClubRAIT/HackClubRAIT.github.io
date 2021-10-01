@@ -19,10 +19,10 @@ nav{
     display: flex;
     background-color: black;
     justify-content: space-between;
-    padding: 10px;
-    position: sticky; /*sticky navbar*/
+    padding: 5px;
+    position: sticky;
     top:0;
-    z-index: 99;
+    z-index:999;
 }
 .navbars{
     display: flex;
@@ -194,3 +194,14 @@ footer a{
     font-size: 50px;
     margin:20px
 }
+
+
+@media (max-width: 768px) {
+    html {
+        overflow-x: hidden;
+    }
+    #team_img{
+        width: fit-content;
+    }
+}
+

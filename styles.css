@@ -47,7 +47,7 @@ nav{
 
 #logo{
  height:80px;
- width:auto; 
+ width:auto;
  border-radius: 50%;
 
 }
@@ -205,3 +205,10 @@ footer a{
     }
 }
 
+
+.hovertext a:hover{
+    color: var(--red);
+}
+.hovertext .active{
+    color: var(--red);
+}

@@ -62,11 +62,21 @@ footer a{
     color: gray;
 }
 #home_welcome{
-    height:  75vh;
+    height:  100vh;
     color: white;
     text-align: center;
     padding: 30px;
 }
+::selection {
+    background-color: grey;
+  }
+::-webkit-scrollbar {
+        width: 10px;
+        background-color: darkslategrey;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: black;
+      }
 #home_about{
     background-color: white;
     text-align: justify;

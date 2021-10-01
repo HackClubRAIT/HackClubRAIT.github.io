@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    background: rgb(129, 123, 123);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 :root{
     --orange:#f9713d;
     --red:#eb3750;

@@ -62,7 +62,7 @@ footer a{
     color: gray;
 }
 #home_welcome{
-    height:  75vh;
+    height:  87vh;
     color: white;
     text-align: center;
     padding: 30px;
@@ -90,6 +90,12 @@ footer a{
     text-align: center;
     padding:5%;
     background-color: white;
+}
+#banner_data{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .team{
     text-align: center;

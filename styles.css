@@ -19,11 +19,15 @@ nav{
     display: flex;
     background-color: black;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
+    position: sticky;
+    top:0;
+    z-index:999;
 }
 .navbars{
     display: flex;
     justify-content: center;
+
 }
 .navbars li{
     list-style-type: none;
@@ -67,6 +71,17 @@ footer a{
     text-align: center;
     padding: 30px;
 }
+/*scrollbar changes*/
+::selection {
+    background-color: grey;
+  }
+::-webkit-scrollbar {
+        width: 10px;
+        background-color: darkslategrey;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color:#eb3750;
+      }
 #home_about{
     background-color: white;
     text-align: justify;

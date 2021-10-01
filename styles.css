@@ -187,7 +187,10 @@ footer a {
     padding: 50px;
     overflow-x: hidden;
   }
-
+  .btn {
+    width: max-content;
+    height: max-content;
+  }
   .row #opp_card {
     margin: 0;
     width: 100%;

@@ -19,7 +19,10 @@ nav{
     display: flex;
     background-color: black;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
+    position: sticky;
+    top:0;
+    z-index:999;
 }
 .navbars{
     display: flex;

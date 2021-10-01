@@ -62,7 +62,7 @@ footer a{
     color: gray;
 }
 #home_welcome{
-    height:  75vh;
+    height:  91vh;
     color: white;
     text-align: center;
     padding: 30px;
@@ -76,7 +76,7 @@ footer a{
     width:95%;
 }
 #hackclub{
-    font-size:10em;
+    font-size:9em;
     color:var(--red);
     font-family:  'Londrina Outline', cursive;
     font-weight: bold;

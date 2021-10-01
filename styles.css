@@ -1,181 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
-:root{
-    --orange:#f9713d;
-    --red:#eb3750;
-    --grey:#252429;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+:root {
+  --orange: #f9713d;
+  --red: #eb3750;
+  --grey: #252429;
 }
-*,html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Roboto', sans-serif!important;
+body {
+  font-family: "Roboto", sans-serif !important;
+  overflow-x: hidden;
+  background-color: var(--grey) !important;
+}
+nav {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  padding: 10px;
+}
+.navbars {
+  display: flex;
+  justify-content: center;
+}
+.navbars li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.navbars li a {
+  text-decoration: none;
+  color: white;
+}
+.navbars li a:hover {
+  color: var(--red);
+}
+.navbars .active {
+  color: var(--red);
+}
+
+#logo {
+  height: 80px;
+  width: auto;
+  border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+footer i {
+  font-size: 50px !important;
+  margin: 20px 10px 10px 10px;
+}
+footer a {
+  color: gray;
+}
+#home_welcome {
+  height: 75vh;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+#home_about {
+  background-color: white;
+  text-align: justify;
+  padding: 5%;
+}
+.home_illus {
+  width: 95%;
+}
+#hackclub {
+  font-size: 10em;
+  color: var(--red);
+  font-family: "Londrina Outline", cursive;
+  font-weight: bold;
+}
+#home_rait {
+  text-align: justify;
+  padding: 5%;
+  color: white;
+}
+#home_vision {
+  text-align: center;
+  padding: 5%;
+  background-color: white;
+}
+.team {
+  text-align: center;
+}
+.team img {
+  width: auto;
+  height: 200px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.team .row {
+  justify-content: space-evenly;
+}
+#team_img {
+  box-shadow: 1px 2px 4px 0px var(--red);
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+}
+#team_img span {
+  display: grid;
+  grid-gap: 10px;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  background-color: var(--orange);
+  padding: 10px;
+}
+#team_img i {
+  font-size: 20px;
+  color: var(--grey);
+}
+
+#contributor {
+  padding: 30px;
+}
+#contributor img {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+  margin: 5px;
+}
+#project_section .row {
+  width: 100vw;
+}
+#projects {
+  background-color: white;
+  color: black;
+  margin: 40px;
+  padding: 20px;
+  text-align: center;
+  height: auto;
+}
+#projects ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+#projects ul li {
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--orange);
+  color: white;
+}
+.owner {
+  text-decoration: none;
+}
+#opp_card {
+  background-color: white;
+  text-align: center;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+#contact_us {
+  margin: 50px;
+  text-align: center;
+}
+#contact_form form {
+  display: grid;
+  grid-gap: 20px;
+  margin: 30px;
+}
+#contact_form a {
+  color: gray;
+  font-size: 50px;
+  margin: 20px;
+}
+@media (min-width: 768px) {
+  .opportunity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
     overflow-x: hidden;
-    background-color: var(--grey)!important;
-}
-nav{
+  }
+
+  .row #opp_card {
+    margin: 0;
+    width: 100%;
     display: flex;
-    background-color: black;
-    justify-content: space-between;
-    padding: 10px;
-}
-.navbars{
-    display: flex;
-    justify-content: center;
-}
-.navbars li{
-    list-style-type: none;
-    padding: 20px;
-}
-
-.navbars li a{
-    text-decoration: none;
-    color: white;
-}
-.navbars li a:hover{
-    color: var(--red);
-}
-.navbars .active{
-    color: var(--red);
-}
-
-#logo{
- height:80px;
- width:auto; 
- border-radius: 50%;
-
-}
-
-footer{
-    text-align: center;
-    background-color: black;
-    color:white;
-    padding: 20px;
-}
-footer i{
-    font-size: 50px!important;
-    margin: 20px 10px 10px 10px;
-}
-footer a{
-    color: gray;
-}
-#home_welcome{
-    height:  75vh;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-#home_about{
-    background-color: white;
-    text-align: justify;
-    padding:5%
-}
-.home_illus{
-    width:95%;
-}
-#hackclub{
-    font-size:10em;
-    color:var(--red);
-    font-family:  'Londrina Outline', cursive;
-    font-weight: bold;
-}
-#home_rait{
-    text-align: justify;
-    padding:5%;
-    color: white;
-}
-#home_vision{
-    text-align: center;
-    padding:5%;
-    background-color: white;
-}
-.team{
-    text-align: center;
-}
-.team img{
-    width:auto;
-    height: 200px;
-    border-radius: 10px;
-    margin: 10px;
-}
-.team .row{
-    justify-content: space-evenly;
-}
-#team_img{
-    box-shadow: 1px 2px 4px 0px var(--red);
-    margin: 20px;
-    justify-content: center;
-    text-align: center;
-    background-color: white;
-}
-#team_img span{
-    display: grid;
-    grid-gap: 10px;
-    position: absolute;
-    top: 0px;
-    left: 100%;
-    background-color: var(--orange);
-    padding: 10px;
-}
-#team_img i{
-    font-size: 20px;
-    color:var(--grey);
-}
-
-#contributor{
-    padding: 30px;
-}
-#contributor img{
-    height:200px;
-    width: auto;
-    border-radius: 50%;
-    margin: 5px;
-}
-#project_section .row{
+    justify-self: center;
+    align-self: center;
+  }
+  .opportunity .row {
     width: 100vw;
-}
-#projects{
-    background-color: white;
-    color:black;
-    margin:40px;
-    padding:20px;
-    text-align:center;
-    height:auto
-}
-#projects ul{
-    list-style: none;
+  }
+  .opportunity .row #opp_card h3,
+  h5,
+  a {
+    margin-left: 20px;
+  }
+  .opportunity .row .col-3 {
     display: flex;
-    text-align: center;
-}
-#projects ul li{
-    margin: 10px;
-    padding:10px;
-    background-color: var(--orange);
-    color:white
-}
-.owner{
-    text-decoration: none
-}
-#opp_card{
-    background-color: white;
-    text-align: center;
-    margin: 50px;
-    padding:20px;
-    border-radius: 10px;
-}
-#contact_us{
-    margin: 50px;
-    text-align: center;
-}
-#contact_form form{
-    display: grid;
-    grid-gap:20px;
-    margin: 30px;
-}
-#contact_form a{
-    color: gray;
-    font-size: 50px;
-    margin:20px
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -1,116 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
-:root{
-    --orange:#f9713d;
-    --red:#eb3750;
-    --grey:#252429;
+
+:root {
+    --orange: #f9713d;
+    --red: #eb3750;
+    --grey: #252429;
 }
-*,html{
+
+*,
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Roboto', sans-serif!important;
+
+body {
+    font-family: 'Roboto', sans-serif !important;
     overflow-x: hidden;
-    background-color: var(--grey)!important;
+    background-color: var(--grey) !important;
 }
-nav{
+
+nav {
     display: flex;
     background-color: black;
     justify-content: space-between;
     padding: 10px;
 }
-.navbars{
+
+.navbars {
     display: flex;
     justify-content: center;
 }
-.navbars li{
+
+.navbars li {
     list-style-type: none;
     padding: 20px;
 }
 
-.navbars li a{
+.navbars li a {
     text-decoration: none;
     color: white;
 }
-.navbars li a:hover{
+
+.navbars li a:hover {
     color: var(--red);
 }
-.navbars .active{
+
+.navbars .active {
     color: var(--red);
 }
 
-#logo{
- height:80px;
- width:auto; 
- border-radius: 50%;
+#logo {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
 
 }
 
-footer{
+footer {
     text-align: center;
     background-color: black;
-    color:white;
+    color: white;
     padding: 20px;
 }
-footer i{
-    font-size: 50px!important;
+
+footer i {
+    font-size: 50px !important;
     margin: 20px 10px 10px 10px;
 }
-footer a{
+
+footer a {
     color: gray;
 }
-#home_welcome{
-    height:  75vh;
+
+#home_welcome {
+    height: 75vh;
     color: white;
     text-align: center;
     padding: 30px;
 }
-#home_about{
+
+#home_about {
     background-color: white;
     text-align: justify;
-    padding:5%
+    padding: 5%
 }
-.home_illus{
-    width:95%;
+
+.home_illus {
+    width: 95%;
 }
-#hackclub{
-    font-size:10em;
-    color:var(--red);
-    font-family:  'Londrina Outline', cursive;
+
+#hackclub {
+    font-size: 10em;
+    color: var(--red);
+    font-family: 'Londrina Outline', cursive;
     font-weight: bold;
 }
-#home_rait{
+
+#home_rait {
     text-align: justify;
-    padding:5%;
+    padding: 5%;
     color: white;
 }
-#home_vision{
+
+#home_vision {
     text-align: center;
-    padding:5%;
+    padding: 5%;
     background-color: white;
 }
-.team{
+
+.team {
     text-align: center;
 }
-.team img{
-    width:auto;
+
+.team img {
+    width: auto;
     height: 200px;
     border-radius: 10px;
     margin: 10px;
 }
-.team .row{
+
+.team .row {
     justify-content: space-evenly;
 }
-#team_img{
+
+#team_img {
     box-shadow: 1px 2px 4px 0px var(--red);
     margin: 20px;
     justify-content: center;
     text-align: center;
     background-color: white;
 }
-#team_img span{
+
+#team_img span {
     display: grid;
     grid-gap: 10px;
     position: absolute;
@@ -119,63 +141,156 @@ footer a{
     background-color: var(--orange);
     padding: 10px;
 }
-#team_img i{
+
+#team_img i {
     font-size: 20px;
-    color:var(--grey);
+    color: var(--grey);
 }
 
-#contributor{
+#contributor {
     padding: 30px;
 }
-#contributor img{
-    height:200px;
+
+#contributor img {
+    height: 200px;
     width: auto;
     border-radius: 50%;
     margin: 5px;
 }
-#project_section .row{
-    width: 100vw;
-}
-#projects{
-    background-color: white;
-    color:black;
-    margin:40px;
-    padding:20px;
-    text-align:center;
-    height:auto
-}
-#projects ul{
-    list-style: none;
-    display: flex;
-    text-align: center;
-}
-#projects ul li{
-    margin: 10px;
-    padding:10px;
-    background-color: var(--orange);
-    color:white
-}
-.owner{
+
+.owner {
     text-decoration: none
 }
-#opp_card{
+
+#opp_card {
     background-color: white;
     text-align: center;
     margin: 50px;
-    padding:20px;
+    padding: 20px;
     border-radius: 10px;
 }
-#contact_us{
+
+#contact_us {
     margin: 50px;
     text-align: center;
 }
-#contact_form form{
+
+#contact_form form {
     display: grid;
-    grid-gap:20px;
+    grid-gap: 20px;
     margin: 30px;
 }
-#contact_form a{
+
+#contact_form a {
     color: gray;
     font-size: 50px;
-    margin:20px
+    margin: 20px
+}
+
+
+/*********************************** PROJECT STYLES ***********************************************/
+.navbar-toggler-icon {
+    color: #f9713d;
+    background-color: #f9713d;
+}
+
+
+.container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: center;
+}
+
+
+#projects {
+    background-color: white;
+    color: black;
+    margin: 40px;
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: 500;
+    border-bottom: 2px solid #f9713d;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.tag-item {
+    margin-left: 0;
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--orange);
+    color: white;
+    list-style: none;
+    text-align: center;
+    font-size: 13px !important;
+}
+
+.card a {
+    display: inline;
+    width: fit-content;
+}
+
+.btn {
+    width: fit-content;
+    color: #f9713d;
+}
+
+.btn:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+i {
+    color: #f9713d !important;
+    font-size: 20px;
+}
+
+.card-footer {
+    background-color: white !important;
+    border-top: none !important;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin-top: auto;
+    padding: 0;
+    padding-left: 5px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .navbars {
+        flex-direction: column;
+    }
+
+    #projects {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25% !important;
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 576px) {
+    .col-sm-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667% !important;
+        max-width: 41.666667%;
+    }
 }

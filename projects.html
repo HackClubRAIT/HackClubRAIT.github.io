@@ -1,83 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Projects</title>
 </head>
+
 <body>
-    <nav>
+
+    <nav class="navbar navbar-expand-lg navbar-inverse bg-inverse">
         <img id="logo" src="./images/hackclubrait.jpeg">
-        <ul class="navbars">
-            <li><a href="index.html" >HOME</a></li>
-            <li><a href="team.html">TEAM</a></li>
-            <li><a href="projects.html"  class="active">PROJECTS</a></li>
-            <li><a href="contributer.html">CONTRIBUTORS</a></li>
-            <li><a href="opportunity.html" >OPPORTUNITIES</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbars navbar-nav mr-auto w-100 justify-content-end">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+                <li class="nav-item active"><a class="nav-link" href="projects.html" class="active">PROJECTS</a></li>
+                <li class="nav-item"><a class="nav-link" href="contributer.html">CONTRIBUTORS</a></li>
+                <li class="nav-item"><a class="nav-link" href="opportunity.html">OPPORTUNITIES</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
     </nav>
-    <section id="project_section">
-        <div class="row" >
-            <div class="col-3" id="projects">
-                <h2>E learning website </h2>
-                <h4>It's a resource for every newbie developer where students can find their basic things. </h4>
-                <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>Js</li>
-                    <li>Bootstrap</li>
-                </ul>
-                <h5>Github Link :<a href="https://github.com/SahityaRoy/E-Learning-freesite" target="_blank_"> E-Learning-freesite</a></h5>
-                <h3>Maintainer : <a href="https://github.com/SahityaRoy" target="_blank_" class="owner"><i class="fa fa-github"></i>&nbsp;<B>Sahitya Roy</B></a></h3>
+
+
+    <section class="card-deck container row" id="project_section">
+
+        <div class="card col-sm-5 col-md-3" id="projects">
+            <div class="card-title">
+                <h3>E-Learning-Freesite </h3>
             </div>
-            <div class="col-3" id="projects">
-                <h2>Embellish</h2>
-                <h4>This repository contains different styled components in html, css, js, jquery which can be used in any website.</h4>
-                <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>Js</li>
-                    <li>JQuery</li>
-                </ul>
-                <h5>Github Link :<a href="https://github.com/siddhi-244/Embellish" target="_blank_"> Embellish</a></h5>
-                <h3>Maintainer : <a href="https://github.com/siddhi-244" target="_blank_" class="owner"><i class="fa fa-github"></i>&nbsp;<B>Siddhi Bhanushali</B></a>
-                </h3>
-            </div>
-            <div class="col-3" id="projects">
-                <h2>Wizard-Of-Docs</h2>
-                <h4>An open source project to bring all the data structures and algorithms docs under one repository.</h4>
-                <ul>
-                    <li>Data structures and algorithm</li>
-                </ul>
-                <h5>Github Link :<a href="https://github.com/HackClubRAIT/Wizard-Of-Docs" target="_blank_">Wizard-of-Docs</a></h5>
-                <h3>Maintainer : <a href="https://github.com/siddhi-244" target="_blank_" class="owner"><i class="fa fa-github"></i>&nbsp;<B>Siddhi Bhanushali</B></a>
-                    <br>
-                    <a href="https://github.com/girija0707" target="_blank_" class="owner"><i class="fa fa-github"></i>&nbsp;<B>Girija Gupte</B></a> 
-                </h3>
+            <p class="card-text">It's a resource for every newbie developer where students can find their basic
+                things. </p>
+            <ul class="tags">
+                <li class="badge tag-item">HTML</li>
+                <li class="badge tag-item">CSS</li>
+                <li class="badge tag-item">JS</li>
+                <li class="badge tag-item">Bootstrap</li>
+            </ul>
+            <div class="card-footer">
+                <div class="source-code">
+                    <a class="btn" href="https://github.com/SahityaRoy/E-Learning-freesite" target="_blank_">GitHub</a>
+                </div>
+                <div class="maintainers">
+                    <a href="https://github.com/SahityaRoy" target="_blank_" class="owner"><i
+                            class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
-        <div class="row" >
-            
-            <div class="col-3" id="projects">
-                <h2>Frontend-owls</h2>
-                <h4>An open source project to bring all front end documentation under one repository.</h4>
-                <ul>
-                    <li>Frontend</li>
-                </ul>
-                <h5>Github Link :<a href="https://github.com/HackClubRAIT/Frontend-Owls" target="_blank_">Frontend-Owls</a></h5>
-                <h3>Maintainer : <a href="https://github.com/siddhi-244" target="_blank_" class="owner"><i class="fa fa-github"></i>&nbsp;<B>Siddhi Bhanushali</B></a>
-                    <br>
-                    <a href="https://github.com/girija0707" target="_blank_" class="owner"><i class="fa fa-github"></i>&nbsp;<B>Girija Gupte</B></a> 
-                </h3>
+
+        <div class="card col-sm-5 col-md-3" id="projects">
+            <div class="card-title">
+                <h3>Embellish</h3>
             </div>
-            
+            <p class="card-text">This repository contains different styled components in html, css, js, jquery which
+                can be used in any website.</p>
+            <ul class="tags">
+                <li class="badge tag-item">HTML</li>
+                <li class="badge tag-item">CSS</li>
+                <li class="badge tag-item">JS</li>
+                <li class="badge tag-item">JQuery</li>
+            </ul>
+            <div class="card-footer">
+                <div class="source-code">
+                    <a class="btn" href="https://github.com/siddhi-244/Embellish" target="_blank_">GitHub</a>
+                </div>
+                <div class="maintainers">
+                    <a href="https://github.com/siddhi-244" target="_blank_" class="owner"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-sm-5 col-md-3" id="projects">
+            <div class="card-title">
+                <h3>Wizard-Of-Docs</h3>
+            </div>
+            <p class="card-text">An open source project to bring all the data structures and algorithms docs under
+                one repository.</p>
+            <ul class="tags">
+                <li class="badge tag-item">DSA</li>
+            </ul>
+            <div class="card-footer">
+                <div class="source-code">
+                    <a class="btn" href="https://github.com/HackClubRAIT/Wizard-Of-Docs" target="_blank_">GitHub</a>
+                </div>
+                <div class="maintainers">
+                    <a href="https://github.com/siddhi-244" target="_blank_" class="owner"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/girija0707" target="_blank_" class="owner"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="card col-sm-5 col-md-3" id="projects">
+            <div class="card-title">
+                <h3>Frontend-Owls</h3>
+            </div>
+            <p class="card-text">An open source project to bring all front end documentation under one
+                repository.
+            </p>
+            <ul class="tags">
+                <li class="badge tag-item">Frontend</li>
+            </ul>
+            <div class="card-footer">
+                <div class="source-code">
+                    <a class="btn" class="card-link" href="https://github.com/HackClubRAIT/Frontend-Owls"
+                        target="_blank_">GitHub</a>
+                </div>
+                <div class="maintainers">
+                    <a href="https://github.com/siddhi-244" target="_blank_" class="owner"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://github.com/girija0707" target="_blank_" class="owner"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
         </div>
     </section>
-    
+
 </body>
+
 </html>

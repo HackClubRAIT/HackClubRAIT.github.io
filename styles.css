@@ -16,10 +16,15 @@ body{
     background-color: var(--grey)!important;
 }
 nav{
+    width: 100%;
     display: flex;
     background-color: black;
+    align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
+    position: fixed;
+    flex-grow: 1;
+    z-index: 2;
 }
 .navbars{
     display: flex;
@@ -65,7 +70,7 @@ footer a{
     height:  75vh;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 80px 30px;
 }
 #home_about{
     background-color: white;

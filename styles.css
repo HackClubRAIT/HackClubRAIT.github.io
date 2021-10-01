@@ -19,7 +19,9 @@ nav{
     display: flex;
     background-color: black;
     justify-content: space-between;
-    padding: 10px;
+    padding: 8px;
+    position: fixed;
+    width: 100%;
 }
 .navbars{
     display: flex;
@@ -65,7 +67,7 @@ footer a{
     height:  75vh;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 100px;
 }
 #home_about{
     background-color: white;

@@ -181,9 +181,7 @@ footer a{
     .g1,.g2{
         width: 20%;
     }
-
 }
-
 @media(max-width:600px){
     .contactLink{
         width: 70%;
@@ -191,17 +189,13 @@ footer a{
     .g1,.g2{
         width: 25%;
     }
-
 }
 @media(max-width:450px){
     .g1,.g2{
         width: 33%;
     }
-
 }
-
 /* updated footer ends here  */
-
 .team .row{
     justify-content: space-evenly;
 }
@@ -225,7 +219,6 @@ footer a{
     font-size: 20px;
     color:var(--grey);
 }
-
 #contributor{
     padding: 30px;
 }

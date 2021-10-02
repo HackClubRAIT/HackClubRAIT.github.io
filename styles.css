@@ -40,6 +40,7 @@ nav{
 }
 .navbars li a:hover{
     color: var(--red);
+    transition: 500ms;
 }
 .navbars .active{
     color: var(--red);
@@ -70,6 +71,7 @@ footer a{
     color: white;
     text-align: center;
     padding: 30px;
+    padding-top: 130px;
 }
 /*scrollbar changes*/
 ::selection {
@@ -83,9 +85,14 @@ footer a{
         background-color:#eb3750;
       }
 #home_about{
+    height: 749.6px;
     background-color: white;
     text-align: justify;
-    padding:5%
+    padding:5%;
+    padding-top: 150px;
+}
+h1{
+    color: #eb3750;
 }
 .home_illus{
     width:95%;
@@ -97,13 +104,16 @@ footer a{
     font-weight: bold;
 }
 #home_rait{
-    text-align: justify;
+    height: 749.6px;
     padding:5%;
+    padding-top: 150px;
     color: white;
 }
 #home_vision{
+    height: 749.6px;
     text-align: center;
     padding:5%;
+    padding-top: 150px;
     background-color: white;
 }
 .team{

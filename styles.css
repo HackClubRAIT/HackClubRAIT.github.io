@@ -274,8 +274,6 @@ footer a{
     font-size: 50px;
     margin:20px
 }
-
-
 @media (max-width: 768px) {
     html {
         overflow-x: hidden;

@@ -286,3 +286,28 @@ footer a{
         width: fit-content;
     }
 }
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+    .col-6 img{
+        display: none;
+    }
+    .row{
+        margin-top: 30px;
+    }
+    .navbars li {
+        padding: 10px;
+    }
+    .menuact{
+        display: inline;
+        left: -15%;
+       position: relative;
+       color: aliceblue;
+       margin:22px
+    }
+   .navbars li{
+           display: none;
+       }
+       .menuact:active + .menu ul li {
+        position: relative;
+        display: block;
+     }
+}

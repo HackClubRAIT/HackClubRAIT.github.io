@@ -250,16 +250,32 @@ footer a {
     color: white;
 }
 
+.maintainers {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.maintainers a:hover {
+    text-decoration: none;
+}
+
 i {
     color: #f9713d !important;
-    font-size: 20px;
+    font-size: 12px;
+}
+
+.maintainer-name {
+    font-size: 12px;
+    color: #f9713d;
+    padding-left: 3px;
 }
 
 .card-footer {
     background-color: white !important;
     border-top: none !important;
     display: flex;
-    align-items: baseline;
+    align-items:flex-end;
     justify-content: space-between;
     margin-bottom: 0;
     margin-top: auto;

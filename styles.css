@@ -115,6 +115,51 @@ footer a{
     border-radius: 10px;
     margin: 10px;
 }
+
+/* updated footer code begins from here  */
+.footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerHeading1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerHeading1 img{
+    height: 60px;
+    width: auto;
+    border-radius: 100%;
+}
+.column1{
+    width: 50%;
+}
+.column2{
+    width: 50%;
+}
+.footerLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.g1,.g2{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.g1 a{
+    margin-bottom: 5px;
+    text-align: left;
+}
+.g2 a{
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* updated footer ends here  */
+
 .team .row{
     justify-content: space-evenly;
 }
@@ -203,5 +248,48 @@ footer a{
     #team_img{
         width: fit-content;
     }
+}
+
+/* Reposive footer code begins from here  */
+@media(max-width:1200px){
+    .g1,.g2{
+        width: 25%;
+    }
+}
+@media(max-width:830px){
+    .column1,.column2{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contactLink{
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        margin: 5px auto;
+    }
+    .contactIcon{
+        height: 15px;
+        width: 20px;
+    }
+    .g1,.g2{
+        width: 20%;
+    }
+
+}
+
+@media(max-width:600px){
+    .contactLink{
+        width: 70%;
+    }
+    .g1,.g2{
+        width: 25%;
+    }
+
+}
+@media(max-width:450px){
+    .g1,.g2{
+        width: 33%;
+    }
+
 }
 

@@ -18,7 +18,7 @@ git clone https://github.com/<your_name>/HackClubRAIT-Website.github.io.git
 **3.** Navigate to the project directory :file_folder: .
 
 ```
-cd HackClubRAIT-Website
+cd HackClubRAIT-Website.github.io
 ```
 
 **4.** Add a reference(remote) to the original repository.

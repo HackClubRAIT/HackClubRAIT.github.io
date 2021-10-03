@@ -40,6 +40,7 @@ nav{
 }
 .navbars li a:hover{
     color: var(--red);
+    transition: 500ms;
 }
 .navbars .active{
     color: var(--red);
@@ -69,7 +70,8 @@ footer a{
     height:  100vh;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
+    padding-top: 130px;
 }
 /*scrollbar changes*/
 ::selection {
@@ -83,9 +85,14 @@ footer a{
         background-color:#eb3750;
       }
 #home_about{
+    height: 749.6px;
     background-color: white;
     text-align: justify;
-    padding:5%
+    padding:5%;
+    padding-top: 150px;
+}
+h1{
+    color: #eb3750;
 }
 .home_illus{
     width:95%;
@@ -100,15 +107,19 @@ footer a{
     font-family:  'Londrina Outline', cursive;
     font-weight: bold;
 }
+
 }
 #home_rait{
-    text-align: justify;
+    height: 749.6px;
     padding:5%;
+    padding-top: 150px;
     color: white;
 }
 #home_vision{
+    height: 749.6px;
     text-align: center;
     padding:5%;
+    padding-top: 150px;
     background-color: white;
 }
 #banner_data{
@@ -116,6 +127,37 @@ footer a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media(max-width:890px){
+    #hackclub{
+        font-size:8em;
+    }
+    #hackclub_welcome{
+        padding-top: 50px;
+    }
+}
+@media(max-width:770px){
+    #hackclub{
+        font-size:6em;
+    }
+    #hackclub_welcome{
+        padding-top: 0px;
+    }
+    #hackclub-des{
+        font-size: 40px;
+    }
+}
+@media(max-width:350px){
+    #hackclub{
+        font-size:5em;
+    }
+    #hackclub_welcome{
+        padding-top: 0px;
+    }
+    #hackclub-des{
+        font-size: 30px;
+    }
 }
 .team{
     text-align: center;

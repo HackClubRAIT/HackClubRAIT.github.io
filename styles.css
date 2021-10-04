@@ -41,7 +41,22 @@ nav{
 .navbars li a:hover{
     color: var(--red);
     transition: 500ms;
+
 }
+.hover-line::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--red);
+    transition: width .3s;
+}
+.hover-line:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+
 .navbars .active{
     color: var(--red);
 }

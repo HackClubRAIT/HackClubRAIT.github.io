@@ -48,7 +48,8 @@ nav{
 
 
 #logo{
- width: 60px; 
+ width: 60px;
+ height: 60px;
  border-radius: 50%;
  transition: all 0.5s ease-in;
 }
@@ -342,9 +343,21 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px;
     text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
 }
+
+#contact_form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
 #contact_form form{
     /* display: grid;
     grid-gap:20px; */
@@ -353,15 +366,43 @@ justify-content: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid var(--red);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#contact_form input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--red);
+    opacity: 0.9;
+    width: 100%;
+    max-width: 400px;
+}
+
+#contact_form input:focus {
+    opacity: 1;
+    border-bottom: 2px solid var(--orange);
+}
+
+#contact_form button {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
 }
 /* .btn{
     width: 290px;
 } */
 #contact_form a{
     color: gray;
-    font-size: 50px;
+    font-size: 40px;
     margin:20px
 }
+
+#contact_form a:hover{
+    color: var(--red);
+}
+
 .form-control-lg {
     min-height: calc(1.5em + 1rem + 2px);
     padding: .5rem 1rem;
@@ -409,7 +450,7 @@ justify-content: center;
 }
 @media (max-width: 1000px){
     #contact_us{
-        flex-direction: column-reverse;
+        /*flex-direction: column-reverse;*/
         justify-content: center;
     }
 }

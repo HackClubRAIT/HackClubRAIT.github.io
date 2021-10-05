@@ -57,7 +57,6 @@
             const users = response.data;
             img_id = users.map(u => u.id);
             img_user = users.map(u => u.login);
-            console.log(users);
             for (let i = 0; i < img_id.length; i++) {
                 div.innerHTML+=`<div class="userBlock"><a href="https://github.com/${img_user[i]}" target="_blank_"><img src="https://avatars.githubusercontent.com/u/${img_id[i]}"/></a><div><h4>@${img_user[i]}</h4><p>Contributions: ${users[i].contributions}</p><p>Followers: ${users[i].followers_url.length}</p><p>Following: ${users[i].following_url.length}</p></div></div>`;
             }

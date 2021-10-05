@@ -19,7 +19,7 @@ nav{
     display: flex;
     background-color: black;
     justify-content: space-between;
-    padding: 5px;
+    padding: 15px;
     position: sticky;
     top:0;
     z-index:999;
@@ -48,11 +48,15 @@ nav{
 
 
 #logo{
- height:80px;
- width:auto; 
+ width: 60px; 
  border-radius: 50%;
-
+ transition: all 0.5s ease-in;
 }
+
+#logo:hover {
+    filter: hue-rotate(180deg);
+}
+
 footer{
     text-align: center;
     background-color: black;

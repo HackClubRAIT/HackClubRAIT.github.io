@@ -19,6 +19,7 @@ nav{
     display: flex;
     background-color: black;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
     position: sticky;
     top:0;
@@ -279,9 +280,33 @@ h1{
 }
 #contributor{
     padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
 }
+
+#contributor .userBlock {
+    padding: 15px;
+    border: 2px solid var(--red);
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    color: white;
+}
+
+#contributor a {
+    text-decoration: none;
+    color: white;
+}
+
 #contributor img{
-    height:200px;
+    height:150px;
     width: auto;
     border-radius: 50%;
     margin: 5px;

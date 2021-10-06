@@ -105,18 +105,36 @@ footer a{
     ::-webkit-scrollbar-thumb {
         background-color:#eb3750;
       }
+
+/* Content changes of about section */
 #home_about{
     height: 749.6px;
     background-color: white;
     text-align: justify;
     padding:5%;
     padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
 }
 h1{
     color: #eb3750;
 }
+.content{
+    min-width: 49%;
+    width: 49%;
+}
+.img-box{
+    margin-left: 40px;
+}
 .home_illus{
-    width:95%;
+    max-width:100%;
+}
+.img-box1 {
+    margin-right: 40px;
+}
+.home_illus1 {
+    max-width: 100%;
 }
 @media(min-width:490px){
     .navbars{
@@ -135,6 +153,9 @@ h1{
     padding:5%;
     padding-top: 150px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
 }
 #home_vision{
     height: 749.6px;
@@ -472,6 +493,17 @@ justify-content: center;
     }
     #team_img{
         width: fit-content;
+    }
+    #home_about{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .content{
+        min-width: 100%;
+        width: 100%;
+    }
+    #home_rait{
+        flex-direction: column;
     }
 }
 @media(max-width:490px){

@@ -384,6 +384,12 @@ justify-content: center;
     html {
         overflow-x: hidden;
     }
+    nav {
+        padding: 5px;
+        position: sticky;
+        top:0;
+        z-index:999;
+    }
     #team_img{
         width: fit-content;
     }
@@ -395,6 +401,9 @@ justify-content: center;
         color:var(--red);
     font-family:  'Londrina Outline', cursive;
     font-weight: bold;
+    }
+    nav {
+        position: fixed;
     }
 }
 

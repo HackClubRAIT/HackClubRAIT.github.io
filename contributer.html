@@ -26,7 +26,9 @@
 </head>
 <body>
     <nav>
-        <img id="logo" src="./images/hackclubrait.jpeg">
+        <a href="index.html">
+            <img id="logo" src="./images/hackclubrait.jpeg">
+        </a>
         <ul class="nav navbars">
             <li><a href="index.html" >HOME</a></li>
             <li><a href="team.html">TEAM</a></li>
@@ -56,10 +58,8 @@
             img_id = users.map(u => u.id);
             img_user = users.map(u => u.login);
             for (let i = 0; i < img_id.length; i++) {
-                div.innerHTML+=`<a href="https://github.com/${img_user[i]}" target="_blank_"><img src="https://avatars.githubusercontent.com/u/${img_id[i]}"/></a>`;
-
+                div.innerHTML+=`<div class="userBlock"><a href="https://github.com/${img_user[i]}" target="_blank_"><img src="https://avatars.githubusercontent.com/u/${img_id[i]}"/></a><div><h4>@${img_user[i]}</h4><p>Contributions: ${users[i].contributions}</p><p>Followers: ${users[i].followers_url.length}</p><p>Following: ${users[i].following_url.length}</p></div></div>`;
             }
-           
         })
         .catch((error) => console.error(error));
 };

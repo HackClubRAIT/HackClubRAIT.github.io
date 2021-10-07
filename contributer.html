@@ -60,23 +60,8 @@
                 const users = response.data;
                 img_id = users.map(u => u.id);
                 img_user = users.map(u => u.login);
-                // function to scrape the data from url
-                // used for getting count of follower(s).
-                // same function can be used for getting following count too , but github API is giving a error.
-
-                function httpGet(theUrl) {
-                    var xmlHttp = new XMLHttpRequest();
-                    xmlHttp.open("GET", theUrl, false); // false for synchronous request
-                    xmlHttp.send(null);
-                    return xmlHttp.responseText;
-                }
                 for (let i = 0; i < img_id.length; i++) {
-                    // getting follower count
-                    var followers = httpGet(users[i].followers_url);
-                    // converting raw text to JS object.
-                    followers = JSON.parse(followers);
-                    var follower_count = followers.length;
-                    div.innerHTML += `<div class="userBlock"><a href="https://github.com/${img_user[i]}" target="_blank_"><img src="https://avatars.githubusercontent.com/u/${img_id[i]}"/></a><div><h4>@${img_user[i]}</h4><p>Contributions: ${users[i].contributions}</p><p>Followers: ${follower_count}</p><p>Following: ${users[i].following_url.length}</p></div></div>`;
+                    div.innerHTML += `<div class="userBlock"><a href="https://github.com/${img_user[i]}" target="_blank_"><img src="https://avatars.githubusercontent.com/u/${img_id[i]}"/></a><div><h4>@${img_user[i]}</h4><p>Contributions: ${users[i].contributions}</p></div></div>`;
                 }
             })
             .catch((error) => console.error(error));

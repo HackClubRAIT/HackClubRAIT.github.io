@@ -82,7 +82,21 @@ footer i {
   margin: 20px 10px 10px 10px;
 }
 footer a {
-  color: gray;
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+    color: #eb3750;
+    text-decoration: none;
+    transition: .5s;
+  }
+
+.contactLink a {
+    color: white;
+}
+.contactLink a:hover {
+    color: #eb3750;
+    transition: .5s;
 }
 #home_welcome {
   height: 100vh;

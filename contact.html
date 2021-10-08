@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
@@ -31,16 +33,23 @@
             <img id="logo" src="./images/hackclubrait.jpeg">
         </a>
         <ul class="nav navbars">
-            <li><a href="index.html" >HOME</a></li>
-            <li><a href="team.html">TEAM</a></li>
-            <li><a href="projects.html">PROJECTS</a></li>
-            <li><a href="contributer.html">CONTRIBUTORS</a></li>
-            <li><a href="opportunity.html" >OPPORTUNITIES</a></li>
-            <li><a href="contact.html" class="active">CONTACT US</a></li>
+            <li><a href="index.html" class="active hover-line">HOME</a></li>
+            <li><a href="team.html" class="hover-line">TEAM</a></li>
+            <li><a href="projects.html"  class="hover-line">PROJECTS</a></li>
+            <li><a href="contributer.html"  class="hover-line">CONTRIBUTORS</a></li>
+            <li><a href="opportunity.html"  class="hover-line">OPPORTUNITIES</a></li>
+            <li><a href="contact.html"  class="hover-line">CONTACT US</a></li>
         </ul>
+
+        <!-- <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div> -->
+
     </nav>
-    <div class="row" id="contact_us">
-        <h1 style="color:white">Contact Us</h1>
+    <div class="row" id="contact_us" data-aos="zoom-in">
+        <h1 style="color:#eb3750">Contact Us</h1>
         <div class="col-6" id="contact_form">
             <form>
                 <input type="text" class="form-control-lg" placeholder="Name">
@@ -60,4 +69,9 @@
         </div>
     </div>
 </body>
+<script>
+    AOS.init({
+      duration: 1200,
+    })
+</script>
 </html>

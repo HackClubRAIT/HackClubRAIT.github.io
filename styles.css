@@ -44,7 +44,7 @@ nav {
   transition: 500ms;
 }
 .hover-line::after {
-  content: "";
+  content: " ";
   display: block;
   width: 0%;
   height: 2px;

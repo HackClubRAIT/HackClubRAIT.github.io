@@ -316,6 +316,7 @@ h1 {
   left: 100%;
   background-color: var(--orange);
   padding: 10px;
+  margin: auto;
 }
 #team_img i {
   font-size: 20px;
@@ -574,11 +575,7 @@ h1 {
   .opportunity .row {
     width: 100vw;
   }
-  .opportunity .row #opp_card h3,
-  h5,
-  a {
-    margin-left: 20px;
-  }
+  
   .opportunity .row .col-3 {
     display: flex;
     justify-content: center;

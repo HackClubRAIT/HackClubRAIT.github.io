@@ -25,6 +25,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 999;
+
 }
 .navbars {
   display: flex;
@@ -33,6 +34,9 @@ nav {
 .navbars li {
   list-style-type: none;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbars li a {
@@ -44,12 +48,13 @@ nav {
   transition: 500ms;
 }
 .hover-line::after {
-  content: "";
+  content: " ";
   display: block;
   width: 0%;
   height: 2px;
   background-color: var(--red);
   transition: width 0.3s;
+  text-align: center;
 }
 .hover-line:hover::after {
   width: 100%;

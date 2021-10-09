@@ -85,11 +85,6 @@ footer a {
   color: white;
   text-decoration: none;
 }
-footer a:hover {
-    color: #eb3750;
-    text-decoration: none;
-    transition: .5s;
-  }
 
 .contactLink a {
     color: white;

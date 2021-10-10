@@ -172,6 +172,77 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+.wrapper ul {
+  list-style: none;
+}
+
+.wrapper ul li {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+
+.wrapper ul li .fa {
+  color: #D8E2DC;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+
+/*github*/
+.wrapper ul li:hover.github {
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-github {
+  color: #62eb62;
+  text-shadow: 0 0 15px #62eb62;
+  transition: all 0.5s ease;
+}
+
+/* instagram */
+.wrapper ul li:hover.instagram {
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+/* linkedin */
+.wrapper ul li:hover.linkedin-square {
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-linkedin-square {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+/* gmail */
+.wrapper ul li:hover.envelope {
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-envelope {
+  color: orange;
+  text-shadow: 0 0 15px orangered;
+  transition: all 0.5s ease;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 890px) {
   #hackclub {
     font-size: 8em;

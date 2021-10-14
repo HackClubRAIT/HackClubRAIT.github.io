@@ -420,6 +420,8 @@ h1 {
 
 #contributor .userBlock:hover {
   background: rgba(235, 55, 80, 0.6);
+  transform: scale(1.02);
+  box-shadow: 0 0 32px 8px rgba(235, 55, 80, 0.6);
 }
 
 #contributor .userBlock p {

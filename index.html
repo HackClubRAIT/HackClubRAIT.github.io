@@ -29,6 +29,9 @@
 </head>
 <body>
     <nav>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div> 
         <a href="index.html">
             <img id="logo" src="./images/hackclubrait.jpeg">
         </a>
@@ -136,6 +139,15 @@
     AOS.init({
       duration: 1200,
     })
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    document.getElementById("myBar").style.background="#EB384E";
+    function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+    }
     </script>
 <!-- <script src="burger.js"></script> -->
 </html>

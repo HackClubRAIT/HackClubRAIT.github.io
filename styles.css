@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 :root {
   --orange: #f9713d;
   --red: #eb3750;
@@ -74,6 +75,20 @@ nav {
 
 #logo:hover {
   filter: hue-rotate(180deg);
+}
+.header {
+  display: flex;
+  text-decoration: none;
+}
+.header {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  font-size: 2.1em;
+  padding-left: 10px;
+}
+.logo_header{
+  padding-left: 17px;
+  padding-top: 4px;
 }
 
 footer {

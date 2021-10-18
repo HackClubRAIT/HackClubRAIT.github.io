@@ -308,6 +308,9 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+.logo-img{
+  margin-left: 10px;
+}
 .footerHeading1 img {
   height: 60px;
   width: auto;
@@ -334,10 +337,12 @@ h1 {
 .g1 a {
   margin-bottom: 5px;
   text-align: left;
+  text-decoration: none;
 }
 .g2 a {
   margin-bottom: 5px;
   text-align: left;
+  text-decoration: none;
 }
 /* Reposive footer code begins from here  */
 @media (max-width: 1200px) {

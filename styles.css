@@ -439,7 +439,7 @@ h1 {
   margin: 5px;
 }
 #project_section .row {
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -453,8 +453,8 @@ h1 {
 #projects {
   background-color: white;
   color: black;
-  margin: 40px;
-  padding: 20px;
+  /* margin: 40px;
+  padding: 20px; */
   text-align: center;
   height: auto;
 }

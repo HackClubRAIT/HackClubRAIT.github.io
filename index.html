@@ -29,8 +29,16 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <a class="header" href="index.html">
             <img id="logo" src="./images/hackclubrait.jpeg">
+            <div class="logo_header">
+            <span style="color: #eb3750;"> <</span>
+            <span style="color: #eb3750;">HackClub</span>
+            <span style="color: #eb3750;">/></span>
+            </div>
         </a>
         <ul class="nav navbars">
             <li><a href="index.html" class="active hover-line">HOME</a></li>
@@ -93,7 +101,9 @@
                 <div class="footerHeading">
                     <div class="footerHeading1">
                         <h1>HackClub RAIT</h1>
-                        <img src="./images/hackclubrait.jpeg">
+                        <div class="logo-img">
+                            <img src="./images/hackclubrait.jpeg">
+                        </div>
                     </div>
                     <p>Initiative for students by students</p>
                 </div>
@@ -136,6 +146,15 @@
     AOS.init({
       duration: 1200,
     })
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    document.getElementById("myBar").style.background="#EB384E";
+    function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+    }
     </script>
 <!-- <script src="burger.js"></script> -->
 </html>

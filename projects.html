@@ -26,6 +26,10 @@
     <link rel="manifest" href="favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
     <title>Projects</title>
     <!--My custom CSS which reflects in the mentioned tags below-->
     <style>
@@ -48,7 +52,7 @@
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <a class="header" href="index.html">
             <img id="logo" src="./images/hackclubrait.jpeg">
             <div class="logo_header">
@@ -64,7 +68,7 @@
             <li><a href="contributer.html"  class="hover-line">CONTRIBUTORS</a></li>
             <li><a href="opportunity.html"  class="hover-line">OPPORTUNITIES</a></li>
             <li><a href="contact.html"  class="hover-line">CONTACT US</a></li>
-        </ul>
+        </ul> -->
 
         <!-- <div class="burger">
             <div class="line"></div>
@@ -72,7 +76,33 @@
             <div class="line"></div>
         </div> -->
 
-    </nav>
+    <!-- </nav> -->
+    <nav class="nav navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <a class="header" href="index.html">
+            <img id="logo" src="./images/hackclubrait.jpeg">
+            <div class="logo_header">
+            <span style="color: #eb3750;"> <</span>
+            <span style="color: #eb3750;">HackClub</span>
+            <span style="color: #eb3750;">/></span>
+            </div>
+        </a> 
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbars navbar-nav ms-auto">
+            <li><a href="index.html" class="active hover-line nav navbars">HOME</a></li>
+            <li><a href="team.html" class="hover-line nav navbars">TEAM</a></li>
+            <li><a href="projects.html"  class="hover-line nav navbars">PROJECTS</a></li>
+            <li><a href="contributer.html"  class="hover-line nav navbars">CONTRIBUTORS</a></li>
+            <li><a href="opportunity.html"  class="hover-line nav navbars">OPPORTUNITIES</a></li>
+            <li><a href="contact.html"  class="hover-line nav navbars">CONTACT US</a></li>
+        </div>
+      </nav>
     <section id="project_section">
         <div class="row">
             <div class="col-3" id="projects" data-aos="zoom-in-right">

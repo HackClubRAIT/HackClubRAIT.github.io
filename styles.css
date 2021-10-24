@@ -458,13 +458,13 @@ h1 {
   border-radius: 50%;
   margin: 5px;
 }
-#project_section .row {
+/* #project_section{
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
-}
+} */
 
 /* #project_section .row .col-3{
     width: 30%;
@@ -473,10 +473,10 @@ h1 {
 #projects {
   background-color: white;
   color: black;
-  margin: 40px;
-  padding: 20px;
+  /* margin: 40px;
+  padding: 20px; */
   text-align: center;
-  height: auto;
+  /* height: auto; */
 }
 #projects ul {
   list-style: none;
@@ -633,9 +633,9 @@ h1 {
     color: white;
     font-size: 12px;
   }
-  #project_section .row .col-3 {
+  /* #project_section .row .col-3 {
     width: 50%;
-  }
+  } */
   .opportunity .row .col-3 {
     width: 50%;
   }

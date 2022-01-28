@@ -76,4 +76,4 @@ git push -u origin <your_branch_name>
 **15** Voila! You have made a PR to the HackClubRAIT-Website. Sit back patiently and relax while your PR is reviewed
 
 # For JWOC participants ❗
-Issues will be assigned from 1st February 2022. PRs or Comments before that will be treated as invalid
+Issues will be assigned from 1st February 2022 based on first come first serve. PRs or Comments before that will be treated as invalid

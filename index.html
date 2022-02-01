@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
     <link rel="icon" href="./images/hackclubrait-logo.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <title>HackClubRAIT</title>
 </head>
-<body>
+
+<body onload='myFunc()'>
+
+    <div id="loading">
+        <!-- <div class="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div> -->
+    </div>
+
     <nav class="nav navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
@@ -24,44 +44,48 @@
         <a class="header" href="index.html">
             <img id="logo" src="./images/hackclubrait-logo.png">
             <div class="logo_header">
-            <span style="color: #eb3750;"> <</span>
-            <span style="color: #eb3750;">HackClub</span>
-            <span style="color: #eb3750;">/></span>
+                <span style="color: #eb3750;">
+                </span>
+                <span style="color: #eb3750;">HackClub</span>
+                <span style="color: #eb3750;">/></span>
             </div>
-        </a> 
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav navbars navbar-nav ml-auto">
-            <li><a href="index.html" class="active hover-line nav navbars">HOME</a></li>
-            <li><a href="team.html" class="hover-line nav navbars">TEAM</a></li>
-            <li><a href="projects.html"  class="hover-line nav navbars">PROJECTS</a></li>
-            <li><a href="contributer.html"  class="hover-line nav navbars">CONTRIBUTORS</a></li>
-            <li><a href="opportunity.html"  class="hover-line nav navbars">OPPORTUNITIES</a></li>
-            <li><a href="blogs.html"  class="hover-line nav navbars">BLOGS</a></li>
-            <li><a href="contact.html"  class="hover-line nav navbars">CONTACT US</a></li>
+            <ul class="nav navbars navbar-nav ml-auto">
+                <li><a href="index.html" class="active hover-line nav navbars">HOME</a></li>
+                <li><a href="team.html" class="hover-line nav navbars">TEAM</a></li>
+                <li><a href="projects.html" class="hover-line nav navbars">PROJECTS</a></li>
+                <li><a href="contributer.html" class="hover-line nav navbars">CONTRIBUTORS</a></li>
+                <li><a href="opportunity.html" class="hover-line nav navbars">OPPORTUNITIES</a></li>
+                <li><a href="blogs.html" class="hover-line nav navbars">BLOGS</a></li>
+                <li><a href="contact.html" class="hover-line nav navbars">CONTACT US</a></li>
         </div>
-      </nav>
+    </nav>
     <div id="home_welcome" data-aos="zoom-out">
         <div id="banner_data">
             <h1 id="hackclub">HackClub RAIT</h1><br>
-            <h1 id ="hackclub-des">Initiative for students by students</h1>
+            <h1 id="hackclub-des">Initiative for students by students</h1>
         </div>
     </div>
     <div id="home_about" style="transform: translateY(10%);">
         <div class="content" data-aos="fade-right">
             <h1><b>About HackClub</b></h1><br>
-            <h3>HackClub is a global community of hackers. It is an initiative for students by students. It is a platform that lets you try, break and recreate. 
-                After all, you can’t flutter without trembling. With HackClub you get access to a super awesome community of creative, cheerful, and keen students 
+            <h3>HackClub is a global community of hackers. It is an initiative for students by students. It is a
+                platform that lets you try, break and recreate.
+                After all, you can’t flutter without trembling. With HackClub you get access to a super awesome
+                community of creative, cheerful, and keen students
                 that will help you to share, learn, grow and develop.
             </h3>
         </div>
         <div class="img-box">
             <img class="home_illus" src="images/open source.svg">
         </div>
-        
+
     </div>
     <div id="home_rait">
         <div class="img-box1">
@@ -69,8 +93,10 @@
         </div>
         <div class="content" data-aos="fade-left">
             <h1><b>HackClub RAIT</b></h1><br>
-            <h3>HackClub RAIT is here to help you hack! here we don’t mean to hack into people's bank account but to be creative and solve real-world problems.
-                In case you haven’t contributed to open-source if you're anxious about it? Well, now you don’t have to worry much about it cause HackClub RAIT is here 
+            <h3>HackClub RAIT is here to help you hack! here we don’t mean to hack into people's bank account but to be
+                creative and solve real-world problems.
+                In case you haven’t contributed to open-source if you're anxious about it? Well, now you don’t have to
+                worry much about it cause HackClub RAIT is here
                 to focus essentially on <b>open-source</b>.
             </h3>
         </div>
@@ -78,9 +104,10 @@
     <div id="home_vision">
         <h1><b>Vision</b></h1><br>
         <div data-aos="fade-up">
-        <h2>Our aim is to flourish <br>the thrilling open-source culture<br> to create a favorable environment for <br><b>open-source contributions.</b>      
-        </h2><br><br>
-        <h2>Let’s come together and learn, interact, and grow. 💻 </h2>
+            <h2>Our aim is to flourish <br>the thrilling open-source culture<br> to create a favorable environment for
+                <br><b>open-source contributions.</b>
+            </h2><br><br>
+            <h2>Let’s come together and learn, interact, and grow. 💻 </h2>
         </div><br>
     </div>
     <footer>
@@ -98,10 +125,19 @@
                 <div class="contactLink">
                     <div class="wrapper">
                         <ul>
-                          <a href="https://github.com/HackClubRAIT" target="_blank"><li class="github"><i class="fa fa-github fa-2x" aria-hidden="true"></i></li></a>
-                          <a href="https://instagram.com/hackclubrait?utm_medium=copy_link" target="_blank"><li class="instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li></a>
-                          <a href="https://www.linkedin.com/company/hack-club-rait" target="_blank"><li class="linkedin"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></li></a>
-                          <a href="mailto:hackclubrait@gmail.com"><li class="gmail" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></li></a>
+                            <a href="https://github.com/HackClubRAIT" target="_blank">
+                                <li class="github"><i class="fa fa-github fa-2x" aria-hidden="true"></i></li>
+                            </a>
+                            <a href="https://instagram.com/hackclubrait?utm_medium=copy_link" target="_blank">
+                                <li class="instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+                            </a>
+                            <a href="https://www.linkedin.com/company/hack-club-rait" target="_blank">
+                                <li class="linkedin"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></li>
+                            </a>
+                            <a href="mailto:hackclubrait@gmail.com">
+                                <li class="gmail" target="_blank"><i class="fa fa-envelope fa-2x"
+                                        aria-hidden="true"></i></li>
+                            </a>
                         </ul>
                     </div>
 
@@ -126,23 +162,51 @@
             </div>
 
         </div>
-        <br><H5 style="margin: 0px;">Made with 💝 by Hackclub RAIT</H5>
-        <p style="display: flex; justify-content: center; padding-bottom: 1%; font-size: 15px;">&#169 Hack Club RAIT 2021</p>
+        <br>
+        <H5 style="margin: 0px;">Made with 💝 by Hackclub RAIT</H5>
+        <p style="display: flex; justify-content: center; padding-bottom: 1%; font-size: 15px;">&#169 Hack Club RAIT
+            2021</p>
     </footer>
+
+    <script>
+        var preloader = document.getElementById('loading')
+        function myFunc() {
+            var delay = 50000000;
+            setTimeout("loadExtraFiles();", delay * 1000);
+            preloader.style.display = 'none'
+        }
+    </script>
 </body>
-<script>    
+<script>
     AOS.init({
-      duration: 1200,
+        duration: 1200,
     })
     // When the user scrolls the page, execute myFunction 
-    window.onscroll = function() {myFunction()};
-    document.getElementById("myBar").style.background="#EB384E";
+    window.onscroll = function () { myFunction() };
+    document.getElementById("myBar").style.background = "#EB384E";
     function myFunction() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
     }
-    </script>
+    // var preloader = document.getElementById('loading')
+    // function myFunc() {
+    //     var delay = 5;
+    //     setTimeout("loadExtraFiles();", delay * 1000);
+    //     preloader.style.display = 'none'
+    // }
+    jQuery(document).ready(function ($) {
+    $(window).load(function () {
+        setTimeout(function(){
+            $('#loading').fadeOut('slow', function () {
+            });
+        },2000); // set the time here
+    });  
+});
+
+
+</script>
 <!-- <script src="burger.js"></script> -->
+
 </html>

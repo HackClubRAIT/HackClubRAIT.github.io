@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+#loading{
+  position: fixed;
+  width:100%;
+  height:100vh;
+  background: black url('./images/website_preloader.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 99999;
+  
+}
 :root {
   --orange: #f9713d;
   --red: #eb3750;

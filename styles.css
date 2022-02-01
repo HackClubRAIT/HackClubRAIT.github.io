@@ -17,6 +17,7 @@ body {
   overflow-x: hidden;
   background-color: var(--grey) !important;
 }
+
 nav {
   display: flex;
   background-color: black;
@@ -581,6 +582,16 @@ h1 {
   color: gray;
   font-size: 40px;
   margin: 20px;
+}
+
+#team_img :hover{
+  color: white;
+}
+#team_img h3:hover{
+  color: black;
+}
+#team_img h5:hover{
+  color: black;
 }
 
 #contact_form a:hover {

@@ -741,3 +741,17 @@ h1 {
   height: 4px;
   width: 0%;
 }
+
+ @media screen and (max-device-width: 635px)
+and (orientation: landscape) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+ 
+
+@media screen and (max-device-width: 635px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}  

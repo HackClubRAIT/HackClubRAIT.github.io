@@ -17,6 +17,7 @@ body {
   overflow-x: hidden;
   background-color: var(--grey) !important;
 }
+
 nav {
   display: flex;
   background-color: black;
@@ -581,6 +582,43 @@ h1 {
   color: gray;
   font-size: 40px;
   margin: 20px;
+}
+
+#team_img .fa-linkedin:hover{
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: -webkit-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 0.9s;
+  transform: rotateX(360deg);
+}
+#team_img .fa-instagram:hover{
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: -webkit-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 0.9s;
+  transform: rotate(360deg);
+}
+#team_img .fa-github:hover{
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: -webkit-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 0.9s;
+  transform: rotateY(360deg);
 }
 
 #contact_form a:hover {

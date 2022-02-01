@@ -6,9 +6,10 @@
   position: fixed;
   width:100%;
   height:100vh;
-  background: black url('./images/website_preloader.gif');
+  background: white url('./images/pre_loader3.gif');
   background-position: center center;
   background-repeat: no-repeat;
+  
   z-index: 99999;
   
 }

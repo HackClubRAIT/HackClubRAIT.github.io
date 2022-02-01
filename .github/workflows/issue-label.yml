@@ -1,20 +1,17 @@
-name: Issue_Track_Keeper
- 
-on:
-  issues:
-    types: [opened]
+name: Issue/Pull Request Label
+
+on: [push]
 
 jobs:
-  first-job:
+  build:
     runs-on: ubuntu-latest
-    if: ${{ github.actor != github.repository_owner }} 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@main
-      - name: Run Action
-        uses: TesseractCoding/Issue_Watcher@main
+      - uses: actions/checkout@v1
+      - name: Label Syncer
+        uses: micnncim/action-label-syncer@v1.3.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         with:
-          token: '${{ secrets.GITHUB_TOKEN }}'
-          author: '${{github.actor}}'
-          repo: HackClubRAIT/HackClubRAIT-Website.github.io
-          maxIssue: 2
+          manifest: .github/labels.json
+          prune: false

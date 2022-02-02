@@ -524,14 +524,15 @@ h1 {
   border-radius: 10px;
 }
 #contact_us {
+  background: #252429;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  width: 100%;
+  /* width: 100%; */
   padding: 20px;
-  transform: translateY(15%);
+  transform: translateY(18%);
 }
 
 #contact_form {
@@ -540,7 +541,7 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 #contact_form form {
@@ -551,9 +552,11 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--red);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
   padding: 15px;
+  background: white;
+  filter: drop-shadow(2px 4px 10px black);
 }
 
 #contact_form input {
@@ -565,9 +568,14 @@ h1 {
   max-width: 400px;
 }
 
+#contact_us h1{
+  filter: drop-shadow(2px 4px 10px black);
+  font-weight: bold;
+}
+
 #contact_form input:focus {
   opacity: 1;
-  border-bottom: 2px solid var(--orange);
+  border-bottom: 2px solid black;
 }
 
 #contact_form button {
@@ -669,6 +677,19 @@ h1 {
   color:#f9713d;
   background: white;
 }
+@media (max-width: 1300px){
+  #contact_form{
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1300px){
+  #contact_form{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 1 0 50%;
+    max-width: 63%;
+  }
+}
 @media (max-width: 768px) {
   html {
     overflow-x: hidden;
@@ -737,6 +758,12 @@ h1 {
   #contact_us {
     /*flex-direction: column-reverse;*/
     justify-content: center;
+  }
+}
+@media (max-width: 575px) {
+  #contact_us {
+    transform: translateY(9%);
+    height: 100%;
   }
 }
 @media (min-width: 768px) {

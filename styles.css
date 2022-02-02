@@ -515,6 +515,7 @@ h1 {
 }
 .opportunity{
   transform: translateY(20%);
+  
 }
 #opp_card {
   background-color: white;
@@ -522,6 +523,7 @@ h1 {
   margin: 50px;
   padding: 20px;
   border-radius: 10px;
+  
 }
 #contact_us {
   background: #252429;
@@ -747,7 +749,9 @@ h1 {
   }
   
   .opportunity .row .col-3 {
-    width: 50%;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
   }
   .blogs .col{
     flex: 100%;

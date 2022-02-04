@@ -29,6 +29,7 @@ body {
   overflow-x: hidden;
   background-color: var(--grey) !important;
 }
+
 nav {
   display: flex;
   background-color: black;
@@ -526,6 +527,7 @@ h1 {
 }
 .opportunity{
   transform: translateY(20%);
+  
 }
 #opp_card {
   background-color: white;
@@ -533,16 +535,18 @@ h1 {
   margin: 50px;
   padding: 20px;
   border-radius: 10px;
+  
 }
 #contact_us {
+  background: #252429;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  width: 100%;
+  /* width: 100%; */
   padding: 20px;
-  transform: translateY(15%);
+  transform: translateY(18%);
 }
 
 #contact_form {
@@ -551,7 +555,7 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 #contact_form form {
@@ -562,9 +566,11 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--red);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
   padding: 15px;
+  background: white;
+  filter: drop-shadow(2px 4px 10px black);
 }
 
 #contact_form input {
@@ -576,9 +582,14 @@ h1 {
   max-width: 400px;
 }
 
+#contact_us h1{
+  filter: drop-shadow(2px 4px 10px black);
+  font-weight: bold;
+}
+
 #contact_form input:focus {
   opacity: 1;
-  border-bottom: 2px solid var(--orange);
+  border-bottom: 2px solid black;
 }
 
 #contact_form button {
@@ -593,6 +604,43 @@ h1 {
   color: gray;
   font-size: 40px;
   margin: 20px;
+}
+
+#team_img .fa-linkedin:hover{
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: -webkit-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 0.9s;
+  transform: rotateX(360deg);
+}
+#team_img .fa-instagram:hover{
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: -webkit-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 0.9s;
+  transform: rotate(360deg);
+}
+#team_img .fa-github:hover{
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: -webkit-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 0.9s;
+  transform: rotateY(360deg);
 }
 
 #contact_form a:hover {
@@ -642,6 +690,19 @@ h1 {
   border: 2px solid #eb3750;
   color:#f9713d;
   background: white;
+}
+@media (max-width: 1300px){
+  #contact_form{
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1300px){
+  #contact_form{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 1 0 50%;
+    max-width: 63%;
+  }
 }
 @media (max-width: 768px) {
   html {
@@ -700,7 +761,9 @@ h1 {
   }
   
   .opportunity .row .col-3 {
-    width: 50%;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
   }
   .blogs .col{
     flex: 100%;
@@ -711,6 +774,12 @@ h1 {
   #contact_us {
     /*flex-direction: column-reverse;*/
     justify-content: center;
+  }
+}
+@media (max-width: 575px) {
+  #contact_us {
+    transform: translateY(9%);
+    height: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -753,3 +822,17 @@ h1 {
   height: 4px;
   width: 0%;
 }
+
+ @media screen and (max-device-width: 635px)
+and (orientation: landscape) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+ 
+
+@media screen and (max-device-width: 635px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}  

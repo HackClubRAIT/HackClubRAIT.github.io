@@ -434,7 +434,7 @@ h1 {
 }
 .team {
   text-align: center;
-  transform: translateY(5%);
+  transform: translateY(100px);
 }
 .team img {
   width: auto;
@@ -564,7 +564,8 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: right;
-  transform: translateY(5%);
+  transform: translateY(100px);
+  
 }
 
 #contributor .userBlock {
@@ -613,7 +614,7 @@ h1 {
 
 }*/
 #project_section {
-  transform: translateY(7%);
+  transform: translateY(100px);
 
 }
 
@@ -658,7 +659,7 @@ h1 {
   justify-content: center;
 }
 .opportunity{
-  transform: translateY(20%);
+  transform: translateY(100px);
   
 }
 #opp_card {

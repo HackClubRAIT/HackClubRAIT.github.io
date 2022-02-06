@@ -288,20 +288,21 @@ h1 {
   }
 }
 .team {
+  font-style:Georgia (serif);
   text-align: center;
   transform: translateY(5%);
 }
 .team img {
   width: auto;
   height: 200px;
-  border-radius: 10px;
+  border-radius: 15px;
   margin: 10px;
 }
 /* updated footer code begins from here  */
 .footer {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .footerHeading1 {
   display: flex;
@@ -391,13 +392,23 @@ h1 {
 .team .row {
   justify-content: space-evenly;
 }
+.team :hover{
+  transform: translateY(00.2rem);
+  box-shadow: #000000;
+
+}
 #team_img {
-  box-shadow: 1px 2px 4px 0px var(--red);
+  flex-grow: 1;
+  flex-wrap: 1;
+  flex-basis:1;
+    box-shadow: 12px 12px 2px 1px rgb(3, 3, 48);;
   margin: 20px;
   justify-content: center;
   text-align: center;
-  background-color: white;
-  width: auto;
+  background-color: rgb(155, 222, 248);
+  /* width: auto; */
+  border-radius: 20px;
+  border: #000000;
 }
 #team_img span {
   display: grid;
@@ -409,8 +420,9 @@ h1 {
   padding: 10px;
 }
 #team_img i {
-  font-size: 20px;
+  font-size: 25px;
   color: var(--grey);
+  padding: 7px; 
 }
 #contributor {
   padding: 30px;

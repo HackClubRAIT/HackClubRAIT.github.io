@@ -398,9 +398,9 @@ h1 {
 
 }
 #team_img {
-  flex-grow: 1;
+  /* flex-grow: 1;
   flex-wrap: 1;
-  flex-basis:1;
+  flex-basis:1; */
     box-shadow: 12px 12px 2px 1px rgb(3, 3, 48);;
   margin: 20px;
   justify-content: center;

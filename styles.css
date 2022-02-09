@@ -257,14 +257,17 @@ footer a {
   padding-top: 130px;
 }
 /*scrollbar changes*/
-::selection {
+.no_scroll_bar_visible::-webkit-scrollbar{
+  display: none;
+}
+.scroll_bar_visible::selection {
   background-color: grey;
 }
-::-webkit-scrollbar {
-  width: 10px;
+.scroll_bar_visible::-webkit-scrollbar {
+  width: 10px !important;
   background-color: darkslategrey;
 }
-::-webkit-scrollbar-thumb {
+.scroll_bar_visible::-webkit-scrollbar-thumb {
   background-color: #eb3750;
 }
 

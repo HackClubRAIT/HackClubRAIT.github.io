@@ -223,7 +223,6 @@ nav {
 }
 .header {
   display: flex;
-  text-decoration: none !important;
 }
 .header {
   font-family: 'Dancing Script', cursive;
@@ -612,7 +611,7 @@ h1 {
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;s
   height: auto;
 
 }*/
@@ -628,13 +627,58 @@ h1 {
 } */
 
 #projects {
-  background-color: white;
-  color: black;
+  /* height: 354px; */
+  background-color: #080b5280;
+  color: #eb374faf;
   /* margin: 40px;
   padding: 20px; */
   text-align: center;
   /* height: auto; */
+  border: 2px solid #eb3750;
+  box-shadow: 8px 8px 8px #eb375059;
+  border: none;
 }
+#projects h5{
+  font-size: 20px;
+}
+#projects h3{
+  font-size: 20px !important;
+
+} 
+#projects h3 B{
+  color: #ffe484;
+}
+#projects:hover{
+  color: #ffe484;
+  color: #080a52;
+  background-color: #eb374fa2;
+  transform: scale(1.038);
+  border-color: #080a52;
+  border: none;
+  box-shadow: 8px 8px 8px #eb375059;
+
+  transition: all .3s linear;
+}
+#projects li{
+  border-radius: 8px !important;
+  font-size: 16px;
+}
+#projects h4{
+  font-size: 24px;
+}
+#projects h2{
+  font-size: 32px;
+}
+#projects h5 a{
+  text-decoration: none;
+  color: #ffe484;
+}
+#projects h5 a:hover{
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+
 #projects ul {
   list-style: none;
   display: flex;
@@ -650,8 +694,12 @@ h1 {
 #projects ul li {
   margin: 10px;
   padding: 10px;
-  background-color: var(--orange);
-  color: white;
+  color: #080a52;
+  background-color: #eb3750;
+}
+#projects:hover> ul li{
+  background-color: #080a52c7 !important;
+  color: #eb3750;
 }
 .owner {
   text-decoration: none;
@@ -840,6 +888,21 @@ h1 {
     max-width: 63%;
   }
 }
+@media(max-width:1150px){
+  .navbar ul li{
+    padding: 12px !important;
+  }
+}
+@media(max-width:1300px){
+  #projects ul{
+    display: none;
+  }
+  #projects:hover>ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 768px) {
   html {
     overflow-x: hidden;
@@ -891,10 +954,14 @@ h1 {
   #projects ul li {
     margin: 10px;
     padding: 10px;
-    background-color: var(--orange);
-    color: white;
+    /* background-color: var(--orange); */
+    /* color: white; */
     font-size: 12px;
   }
+  /* #projects ul li:hover{
+    margin-top: 5px !important; 
+    margin-bottom: 5px !important;
+  } */
   
   .opportunity .row .col-3 {
     width: 75%;

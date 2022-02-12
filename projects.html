@@ -9,136 +9,802 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="icon" href="./images/hackclubrait-logo.png">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-     
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     <title>Projects</title>
     <!--My custom CSS which reflects in the mentioned tags below-->
     <style>
         /* ul {
             padding-right: 10%;
         } */
-        
+
         #projects {
             border-radius: 25px;
         }
-        
+
         li {
             border-radius: 15px;
         }
-        
+
         h3 {
             font-size: 20px;
+        }
+        /* svg section styling */
+        svg {
+            display: block;
+            margin: 0 auto;
+            max-width: 650px;
+            margin-left: 0;
+            margin-top: 100px;
+        }
+        #project_svg_section{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding-left: 35px;
+            background:linear-gradient(#362f5abd,#2b2a2a);
+            padding-bottom: 5px;
+            padding-top: 30px;
+        }
+
+        g {
+            perspective: 150px;
+        }
+
+        #wp_web {
+            overflow: visible;
+        }
+
+        #wp_web .main_pc,
+        #wp_web .main_tab,
+        #wp_web .main_mob {
+            transform-style: preserve-3d;
+            transform: translate3d(0, 70%, 0) scale(0);
+            animation: go 0.8s ease-in-out forwards;
+            transform-origin: 40% 45%;
+        }
+
+        #wp_web .main_tab {
+            transform-origin: 80% 45%;
+        }
+
+        #wp_web .main_mob {
+            transform-origin: 30% 45%;
+        }
+
+        #wp_web .wp_logo {
+            transform: scale(1.5);
+            opacity: 0;
+            transform-origin: 15%;
+            animation: zoom 0.9s ease-in-out forwards 1.6s;
+        }
+
+        #wp_web .pc_shine {
+            opacity: 0;
+            animation: zoom 0.8s ease-in-out forwards 1.9s;
+        }
+
+        #wp_web .port {
+            opacity: 0;
+            transform: scaley(2);
+            animation: zoom 1s ease-in-out forwards 0.5s;
+        }
+
+        #wp_web .port path {
+            transform: rotate(2deg);
+            transform-origin: 80% 90%;
+        }
+
+        #wp_web .port .wp_fill21 {
+            animation: zoom 1.8s cubic-bezier(0.76, 0.41, 0.2, 0.62) infinite alternate;
+        }
+
+        #wp_web .port .wp_fill25 {
+            animation: zoom 1.6s cubic-bezier(0.76, 0.41, 0.2, 0.62) infinite alternate;
+        }
+
+        #wp_web .port .wp_fill26 {
+            animation: zoom 1.4s cubic-bezier(0.76, 0.41, 0.2, 0.62) infinite alternate-reverse;
+        }
+
+        #wp_web .wifi path {
+            transform: scale(0);
+            transform-origin: 65% 15%;
+            opacity: 0;
+        }
+        #wp_web .wifi{
+            animation: blink 2s infinite forwards;
+
+        }
+        #wp_web .wifi path:nth-child(1) {
+            animation: zoom 0.7s ease-in-out forwards 0.2s;
+        }
+
+        #wp_web .wifi path:nth-child(2) {
+            animation: zoom 0.7s ease-in-out forwards 0.4s;
+        }
+
+        #wp_web .wifi path:nth-child(3) {
+            animation: zoom 0.7s ease-in-out forwards 0.6s;
+        }
+
+        #wp_web .mob_boxes polygon {
+            transform: scale(0);
+            transform-origin: 85% 75%;
+        }
+
+        #wp_web .mob_boxes polygon:nth-child(1) {
+            animation: zoom 0.7s ease-in-out forwards 0.6s;
+        }
+
+        #wp_web .mob_boxes polygon:nth-child(2) {
+            animation: zoom 0.7s ease-in-out forwards 1.2s;
+        }
+
+        #wp_web .mob_boxes polygon:nth-child(3) {
+            animation: zoom 0.7s ease-in-out forwards 1.8s;
+        }
+
+        #wp_web .mob_boxes polygon:nth-child(4) {
+            animation: zoom 0.7s ease-in-out forwards 2.4s;
+        }
+
+        #wp_web .mob_boxes polygon:nth-child(5) {
+            animation: zoom 0.7s ease-in-out forwards 3s;
+        }
+
+        #wp_web .pi_chart {
+            transform: scale(0);
+            transform-origin: 70% 55%;
+            animation: zoom 0.9s ease-in-out forwards 1.7s;
+        }
+
+        #wp_web .tab_lines polygon {
+            transform: scalex(0);
+            transform-origin: 80%;
+        }
+
+        #wp_web .tab_lines polygon:nth-child(1) {
+            animation: zoom 0.5s ease-in-out forwards 1.6s;
+        }
+
+        #wp_web .tab_lines polygon:nth-child(2) {
+            animation: zoom 0.5s ease-in-out forwards 2.6s;
+        }
+
+        #wp_web .tab_lines polygon:nth-child(3) {
+            animation: zoom 0.5s ease-in-out forwards 3.6s;
+        }
+
+        #wp_web .tab_lines polygon:nth-child(4) {
+            animation: zoom 0.5s ease-in-out forwards 4.6s;
+        }
+
+        #wp_web .tab_lines polygon:nth-child(5) {
+            animation: zoom 0.5s ease-in-out forwards 5.6s;
+        }
+
+        #wp_web .pc_boxes polygon {
+            transform: scale(0);
+            transform-origin: 30% 55%;
+        }
+
+        #wp_web .pc_boxes polygon:nth-child(1) {
+            animation: zoom 0.7s ease-in-out forwards 0.6s;
+        }
+
+        #wp_web .pc_boxes polygon:nth-child(2) {
+            animation: zoom 0.7s ease-in-out forwards 1.2s;
+        }
+
+        #wp_web .pc_boxes polygon:nth-child(3) {
+            animation: zoom 0.7s ease-in-out forwards 1.8s;
+        }
+
+        #wp_web .pc_boxes polygon:nth-child(4) {
+            animation: zoom 0.7s ease-in-out forwards 2.4s;
+        }
+
+        #wp_web .pc_boxes polygon:nth-child(5) {
+            animation: zoom 0.7s ease-in-out forwards 3s;
+        }
+
+        #wp_web .pc_boxes polygon:nth-child(6) {
+            animation: zoom 0.7s ease-in-out forwards 3.6s;
+        }
+
+        #wp_web .pc_lines polygon {
+            transform: scalex(0);
+            transform-origin: 45%;
+        }
+
+        #wp_web .pc_lines polygon:nth-child(1) {
+            animation: zoom 0.4s ease-in-out forwards 1.3s;
+        }
+
+        #wp_web .pc_lines polygon:nth-child(2) {
+            animation: zoom 0.4s ease-in-out forwards 2.3s;
+        }
+
+        #wp_web .pc_lines polygon:nth-child(3) {
+            animation: zoom 0.4s ease-in-out forwards 3.3s;
+        }
+
+        #wp_web .pc_lines polygon:nth-child(4) {
+            animation: zoom 0.4s ease-in-out forwards 4.3s;
+        }
+
+        #wp_web .pc_lines polygon:nth-child(5) {
+            animation: zoom 0.4s ease-in-out forwards 5.3s;
+        }
+
+        #wp_web .smoke {
+            transform: scale(0);
+            transform-origin: 0% 50%;
+            opacity: 0;
+            animation: zoom 1.5s ease-in-out forwards 1.2s;
+        }
+
+        #wp_web .play_btn {
+            transform: scale(0.9);
+            opacity: 0.9;
+            transform-origin: 90% 20%;
+            animation: zoom 1.5s ease-in-out infinite alternate;
+        }
+
+        #wp_web .cursor {
+            transform: translate3d(30%, 50%, 0);
+            transform-style: preserve-3d;
+            animation: go 1.6s cubic-bezier(0.71, 0.18, 0.41, 0.88) forwards 0.3s;
+        }
+
+        #wp_web .girl .leg {
+            transform: rotate(3deg);
+            transform-origin: 75% 65%;
+            animation: zoom 1.5s cubic-bezier(0.76, 0.41, 0.2, 0.62) infinite alternate;
+        }
+
+        #wp_web .girl .hair {
+            transform: rotate(-2.5deg);
+            transform-origin: 65% 45%;
+            animation: zoom 2.3s cubic-bezier(0.76, 0.41, 0.2, 0.62) infinite alternate;
+        }
+
+        #wp_web .girl polygon:first-child {
+            transform: rotate(-7deg);
+            transform-origin: 60% 55%;
+            animation: zoom 1.7s cubic-bezier(0.6, 0.07, 0.29, 0.51) infinite alternate;
+        }
+
+        #wp_web .girl polygon:first-child+path {
+            transform: rotate(-8deg);
+            transform-origin: 60% 55%;
+            animation: zoom 1.7s cubic-bezier(0.6, 0.07, 0.29, 0.51) infinite alternate;
+        }
+       
+       
+        @keyframes blink {
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity: 0;
+            }
+        }
+
+        @keyframes go {
+            100% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoom {
+            100% {
+                -webkit-transform: scale(1) rotate(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes show {
+            100% {
+                opacity: 1;
+            }
         }
     </style>
 </head>
 
 <body class="scroll_bar_visible">
-    <nav class="nav navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="nav navbar navbar-expand-lg navbar-dark project_nav_ fixed-top">
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
         </div>
         <a class="header" href="index.html">
             <img id="logo" src="./images/hackclubrait-logo.png">
             <div class="logo_header">
-            <span style="color: #eb3750;"> <</span>
-            <span style="color: #eb3750;">HackClub</span>
-            <span style="color: #eb3750;">/></span>
+                <span style="color: #eb3750;">
+                < </span>
+                        <span style="color: #eb3750;">HackClub</span>
+                        <span style="color: #eb3750;">/></span>
             </div>
-        </a> 
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav navbars navbar-nav ms-auto">
-            <li><a href="index.html" class="hover-line nav navbars">HOME</a></li>
-            <li><a href="team.html" class="hover-line nav navbars">TEAM</a></li>
-            <li><a href="projects.html"  class="active hover-line nav navbars">PROJECTS</a></li><!-- NAVBAR HIGHLIGHT FOR CURRENT PAGE -->
-            <li><a href="contributer.html"  class="hover-line nav navbars">CONTRIBUTORS</a></li>
-            <li><a href="opportunity.html"  class="hover-line nav navbars">OPPORTUNITIES</a></li>
-            <li><a href="blogs.html"  class="hover-line nav navbars">BLOGS</a></li>
-            <li><a href="contact.html"  class="hover-line nav navbars">CONTACT US</a></li>
+            <ul class="nav navbars navbar-nav ms-auto">
+                <li><a href="index.html" class="hover-line nav navbars">HOME</a></li>
+                <li><a href="team.html" class="hover-line nav navbars">TEAM</a></li>
+                <li><a href="projects.html" class="active hover-line nav navbars">PROJECTS</a></li>
+                <!-- NAVBAR HIGHLIGHT FOR CURRENT PAGE -->
+                <li><a href="contributer.html" class="hover-line nav navbars">CONTRIBUTORS</a></li>
+                <li><a href="opportunity.html" class="hover-line nav navbars">OPPORTUNITIES</a></li>
+                <li><a href="blogs.html" class="hover-line nav navbars">BLOGS</a></li>
+                <li><a href="contact.html" class="hover-line nav navbars">CONTACT US</a></li>
         </div>
-     
 
     </nav>
-    <section id="project_section" class="container pt-5">
-        <div class="row m-2">
-           <div class="col-md-4 mb-3">
-            <div id="projects"  class="p-3" data-aos="zoom-in-right">
+    <section class="project_svg_section" id="project_svg_section">
+    
+        <svg id="wp_web" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="45%" version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 9687150 7841420" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <style type="text/css">
+                    .wp_fill14 {
+                        fill: #19C4EB
+                    }
 
-                <h2><strong>E learning website</strong> </h2>
-                <h4>It's a resource for every newbie developer where students can find their basic things. </h4>
-                <ul class="justify-content-center align-items-center">
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>Js</li>
-                    <li>Bootstrap</li>
-                </ul>
-                <h5>Github Link :<a href="https://github.com/SahityaRoy/E-Learning-freesite" target="_blank_"> E-Learning-freesite</a></h5>
-                <h3>Maintainer : <a href="https://github.com/SahityaRoy" target="_blank_" class="owner"><i class="fa fa-github"></i>&nbsp;<B>Sahitya Roy</B></a></h3>
-            </div>
-           </div>
-          <div class="col-md-4  mb-3">
-            <div id="projects"  class="p-3" data-aos="zoom-in">
-                <h2><strong>Embellish</strong></h2>
-                <h4>This repository contains different styled components in html, css, js, jquery which can be used in any website.</h4>
-                <ul class="justify-content-center align-items-center">
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>Js</li>
-                    <li>JQuery</li>
-                </ul>
-                <h5>Github Link :<a href="https://github.com/siddhi-244/Embellish" target="_blank_"> Embellish</a></h5>
-                <h3>Maintainer : <a href="https://github.com/siddhi-244" target="_blank_" class="owner"><i class="fa fa-github"></i>&nbsp;<B>Siddhi Bhanushali</B></a>
-                </h3>
-            </div>
-          </div>
-           <div class="col-md-4  mb-3">
-            <div id="projects" class="p-3" data-aos="zoom-in-left">
-                <h2><strong>Wizard-Of-Docs</strong></h2>
-                <h4>An open source project to bring all the data structures and algorithms docs under one repository.</h4>
-                <ul class="justify-content-center align-items-center">
-                    <li>Data structures and algorithm</li>
-                </ul>
-                <h5>Github Link :<a href="https://github.com/HackClubRAIT/Wizard-Of-Docs" target="_blank_">Wizard-of-Docs</a></h5>
-                <h3>Maintainer : <a href="https://github.com/siddhi-244" target="_blank_" class="owner"><i class="fa fa-github"></i>&nbsp;<B>Siddhi Bhanushali</B></a>
-                    <br>
-                    <a href="https://github.com/girija0707" target="_blank_" class="owner"><i class="fa fa-github"></i>&nbsp;<B>Girija Gupte</B></a>
-                </h3>
-            </div>
-           </div>
+                    .wp_fill29 {
+                        fill: #2D1E57
+                    }
 
-        </div>
-        <div class="row m-2" >
-          <div class="col-md-4"></div>  
+                    .wp_fill4 {
+                        fill: #2EC2A9
+                    }
 
-          <div class="col-md-4">
-            <div class="m-2 p-3" id="projects" data-aos="zoom-in-up">
-                <h2><strong>Frontend-owls</strong></h2>
-                <h4>An open source project to bring all front end documentation under one repository.</h4>
-                <ul class="justify-content-center align-items-center">
-                    <li>Frontend</li>
-                </ul>
-                <h5>Github Link :<a href="https://github.com/HackClubRAIT/Frontend-Owls" target="_blank_">Frontend-Owls</a></h5>
-                <h3>Maintainer : <a href="https://github.com/siddhi-244" target="_blank_" class="owner"><i class="fa fa-github"></i>&nbsp;<B>Siddhi Bhanushali</B></a>
-                    <br>
-                    <a href="https://github.com/girija0707" target="_blank_" class="owner"><i class="fa fa-github"></i>&nbsp;<B>Girija Gupte</B></a>
-                </h3>
-            </div>
-          </div>
-           <div class="col-md-4"></div>
+                    .wp_fill6 {
+                        fill: #41287C
+                    }
+
+                    .wp_fill3 {
+                        fill: #B2E8F4
+                    }
+
+                    .wp_fill30 {
+                        fill: #DDECEF
+                    }
+
+                    .wp_fill19 {
+                        fill: #00648E;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill25 {
+                        fill: #007770;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill21 {
+                        fill: #009793;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill23 {
+                        fill: #035954;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill22 {
+                        fill: #0C0C0C;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill31 {
+                        fill: #21759B;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill1 {
+                        fill: #2D1E57;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill12 {
+                        fill: #2EC2A9;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill2 {
+                        fill: #58D0E9;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill5 {
+                        fill: #9CC1CA;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill18 {
+                        fill: #AF3A26;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill7 {
+                        fill: #B09BC4;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill0 {
+                        fill: #BEB2C7;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill11 {
+                        fill: #C3C1CF;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill8 {
+                        fill: #C4D6D8;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill13 {
+                        fill: #DDDDDD;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill20 {
+                        fill: #E95D3F;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill17 {
+                        fill: #F7B6AF;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill16 {
+                        fill: white;
+                        fill-rule: nonzero
+                    }
+
+                    .wp_fill28 {
+                        fill: gray;
+                        fill-rule: nonzero;
+                        fill-opacity: 0.168627
+                    }
+
+                    .wp_fill10 {
+                        fill: white;
+                        fill-rule: nonzero;
+                        fill-opacity: 0.168627
+                    }
+
+                    .wp_fill9 {
+                        fill: white;
+                        fill-rule: nonzero;
+                        fill-opacity: 0.200000
+                    }
+
+                    .wp_fill24 {
+                        fill: #4B4B4B;
+                        fill-rule: nonzero;
+                        fill-opacity: 0.301961
+                    }
+
+                    .wp_fill26 {
+                        fill: #009793;
+                        fill-rule: nonzero;
+                        fill-opacity: 0.349020
+                    }
+
+                    .wp_fill27 {
+                        fill: #9CC1CA;
+                        fill-rule: nonzero;
+                        fill-opacity: 0.400000
+                    }
+
+                    .wp_fill15 {
+                        fill: url(#id0)
+                    }
+                </style>
+                <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="104835300" y1="-58490300" x2="104660100"
+                    y2="-58490300">
+                    <stop offset="0" style="stop-opacity:1; stop-color:#472A7E" />
+                    <stop offset="1" style="stop-opacity:1; stop-color:#200A49" />
+                </linearGradient>
+            </defs>
+            <g id="Layer_x0020_1">
+                <metadata id="CorelCorpID_0Corel-Layer" />
+                <g class="main_tab">
+                    <path class="wp_fill0"
+                        d="M6076100 5424100c0,46700 662900,84500 1480700,84500 817800,0 1480800,-37800 1480800,-84500 0,-46600 -663000,-84400 -1480800,-84400 -817800,0 -1480700,37800 -1480700,84400z" />
+                    <path class="wp_fill1"
+                        d="M9037600 1358500l0 3840600c0,124600 -100900,225000 -225100,225000l-2511400 0c-124100,0 -225000,-100400 -225000,-225000l0 -3840600c0,-124100 100900,-225000 225000,-225000l2511400 0c124200,0 225100,100900 225100,225000z" />
+                    <path class="wp_fill2"
+                        d="M6259200 1242800l2580600 0c39300,0 71200,31200 71200,69600l0 3932900c0,38400 -31900,69600 -71200,69600l-2580600 0c-39300,0 -71100,-31200 -71100,-69600l0 -3932900c0,-38400 31800,-69600 71100,-69600z" />
+                </g>
+                <g id="_1650025125840" class="pc_boxes">
+                    <polygon class="wp_fill3"
+                        points="8615200,3080900 8615200,3580900 6498300,3580900 6498300,3080900 " />
+                    <polygon class="wp_fill3"
+                        points="7166500,2360400 7166500,3028600 6498300,3028600 6498300,2360400 " />
+                    <polygon class="wp_fill3"
+                        points="7890900,2360400 7890900,3028600 7222700,3028600 7222700,2360400 " />
+                    <polygon class="wp_fill3"
+                        points="8615200,2360400 8615200,3028600 7947000,3028600 7947000,2360400 " />
+                    <polygon class="wp_fill4"
+                        points="7166500,1639900 7166500,2308100 6498300,2308100 6498300,1639900 " />
+                    <polygon class="wp_fill3"
+                        points="7890900,1639900 7890900,2308100 7222700,2308100 7222700,1639900 " />
+                    <polygon class="wp_fill3"
+                        points="8615200,1639900 8615200,2308100 7947000,2308100 7947000,1639900 " />
+                </g>
+                <g id="_1650025128016" class="pi_chart">
+                    <path class="wp_fill5"
+                        d="M7279300 3907800c-79000,-50900 -172900,-80300 -273700,-80300 -209000,0 -388400,126200 -466000,306800l466000 200400 273700 -426900z" />
+                    <path class="wp_fill6"
+                        d="M7485900 4171800l-480300 162900 -506700 -16800c-400,5600 -500,11100 -500,16800 0,280100 227000,507300 507200,507300 280100,0 507300,-227200 507300,-507300 0,-56900 -9500,-111800 -27000,-162900z" />
+                    <path class="wp_fill7"
+                        d="M7485900 4171800c-37000,-109900 -110800,-202800 -206600,-264000l-273700 426900 480300 -162900z" />
+                    <path class="wp_fill8"
+                        d="M6539600 4134300c-24600,56600 -38800,118500 -40700,183600l506700 16800 -466000 -200400z" />
+                </g>
+                <g id="_1650025128976" class="tab_lines">
+                    <polygon class="wp_fill3"
+                        points="8615200,4687500 7718900,4687500 7718900,4842000 8615200,4842000 " />
+                    <polygon class="wp_fill3"
+                        points="8615200,4429600 7718900,4429600 7718900,4584200 8615200,4584200 " />
+                </g>
+                <g class="pc_shine">
+                    <polygon class="wp_fill9"
+                        points="8023800,1133500 6076100,3364500 6076100,2059000 6884200,1133500 " />
+                    <polygon class="wp_fill9"
+                        points="8269500,1133500 6076100,3646200 6076100,4154500 8713300,1133500 " />
+                </g>
+                <path class="wp_fill10 smoke"
+                    d="M6229900 2493300c368700,14100 661800,76400 629500,371800 -32300,295400 302700,190200 714400,255800 411700,65600 585900,310600 278100,489200 -307900,178500 515500,170100 876600,159100 361100,-11000 1109600,57300 719400,167200 -390200,109900 -1659000,234400 -2420500,-20200 -761500,-254500 -994400,-465100 -1444600,-387800 -450100,77300 -965800,188700 -1170800,71700 -205000,-117100 -122400,-331900 519600,-319200 641900,12700 1040400,-245000 752600,-422900 -287700,-177800 37400,-384300 545700,-364700z" />
+                <g class="main_pc">
+                    <path class="wp_fill0"
+                        d="M0 6660500c0,46700 1458600,84500 3257800,84500 1799300,0 3257800,-37800 3257800,-84500 0,-46600 -1458500,-84400 -3257800,-84400 -1799200,0 -3257800,37800 -3257800,84400z" />
+                    <path class="wp_fill11"
+                        d="M6528300 6545100c-25900,67400 -91200,115400 -167900,115400l-6172900 0c-76700,0 -142200,-48000 -168100,-115400 -11800,-31100 11300,-64300 44500,-64300l6419900 0c33200,0 56300,33200 44500,64300z" />
+                    <path class="wp_fill1"
+                        d="M6540100 2668300l0 3469800c0,189200 -153300,342900 -342800,342900l-5847000 0c-65900,0 -127100,-18600 -179500,-50700 -71300,-44300 -125800,-114000 -149400,-196300 -9300,-30400 -14000,-62500 -14000,-95900l0 -3469800c0,-189200 153700,-342500 342900,-342500l5847000 0c189500,0 342800,153300 342800,342500z" />
+                    <path class="wp_fill2"
+                        d="M125600 6242300l0 -3665300c0,-61800 48200,-112000 107700,-112000l6081200 0c59400,0 107600,50200 107600,112000l0 3665300c0,61900 -48200,112000 -107600,112000l-6081200 0c-59500,0 -107700,-50100 -107700,-112000z" />
+                    <path class="wp_fill13"
+                        d="M3859400 6480800l0 29200c0,33400 -27400,60800 -60800,60800l-1049500 0c-33400,0 -60600,-27400 -60600,-60800l0 -29200 1170900 0z" />
+                </g>
+                <g id="_1650025132688" class="pc_boxes">
+                    <!-- <polygon class="wp_fill3" points="2372500,4788800 666200,4788800 666200,3082500 2372500,3082500 "/> -->
+                    <polygon class="wp_fill4"
+                        points="3257800,3903500 2436800,3903500 2436800,3082500 3257800,3082500 " />
+                    <polygon class="wp_fill3"
+                        points="4143100,3903500 3322100,3903500 3322100,3082500 4143100,3082500 " />
+                    <polygon class="wp_fill3"
+                        points="3257800,4788800 2436800,4788800 2436800,3967800 3257800,3967800 " />
+                    <polygon class="wp_fill3"
+                        points="4143100,4788800 3322100,4788800 3322100,3967800 4143100,3967800 " />
+                </g>
+                <g id="_1650025134768" class="pc_lines">
+                    <polygon class="wp_fill12"
+                        points="5881500,3278800 4296600,3278800 4296600,3082500 5881500,3082500 " />
+                    <polygon class="wp_fill3"
+                        points="5881500,3568000 4296600,3568000 4296600,3371700 5881500,3371700 " />
+                    <polygon class="wp_fill3"
+                        points="5881500,3857100 4296600,3857100 4296600,3660800 5881500,3660800 " />
+                    <polygon class="wp_fill3"
+                        points="5158700,4146300 4296600,4146300 4296600,3949900 5158700,3949900 " />
+                    <polygon class="wp_fill3" points="5881500,5838300 666200,5838300 666200,5484900 5881500,5484900 " />
+                </g>
+                <g class="main_mob">
+                    <path class="wp_fill0"
+                        d="M8080200 7225100c0,24900 359700,45100 803500,45100 443700,0 803400,-20200 803400,-45100 0,-24900 -359700,-45100 -803400,-45100 -443800,0 -803500,20200 -803500,45100z" />
+                    <path class="wp_fill1"
+                        d="M9652300 4605000l0 2466700c0,79800 -64600,144800 -144400,144800l-1248100 0c-80200,0 -144800,-65000 -144800,-144800l0 -2466700c0,-79800 64600,-144800 144800,-144800l1248100 0c15700,0 30900,2500 44800,6700 57800,19500 99600,73900 99600,138100z" />
+                    <path class="wp_fill2"
+                        d="M8229500 4522700l1308500 0c26200,0 47400,21000 47400,47000l0 2509200c0,25900 -21200,46900 -47400,46900l-1308500 0c-26100,0 -47400,-21000 -47400,-46900l0 -2509200c0,-26000 21300,-47000 47400,-47000z" />
+                </g>
+                <g id="_1650025068752">
+                    <path style="transform-origin: 90% 75%;" class="wp_fill3 pi_chart"
+                        d="M8730300 6164100c-198100,0 -358800,-160600 -358800,-358800 0,-198200 160700,-358900 358800,-358900 198200,0 358900,160700 358900,358900 0,198200 -160700,358800 -358900,358800z" />
+                    <g class="mob_boxes">
+                        <polygon class="wp_fill12"
+                            points="9089200,5386100 8371500,5386100 8371500,4668400 9089200,4668400 " />
+                        <polygon class="wp_fill3"
+                            points="8680400,6812600 8371500,6812600 8371500,6224400 8680400,6224400 " />
+                        <polygon class="wp_fill3"
+                            points="9038200,6812600 8729300,6812600 8729300,6224400 9038200,6224400 " />
+                        <polygon class="wp_fill14"
+                            points="9396100,6812600 9087100,6812600 9087100,6224400 9396100,6224400 " />
+                        <polygon class="wp_fill6"
+                            points="9396100,4919600 9144900,4919600 9144900,4668400 9396100,4668400 " />
+                    </g>
+                </g>
+                <g id="_1650025069008" class="play_button_svg">
+                    <polygon class="wp_fill15"
+                        points="9461300,873000 9461300,1974000 8360300,1974000 8360300,873000 " />
+                    <polygon class="wp_fill16 play_btn" points="8812400,1162400 8812400,1684600 9073500,1423500 " />
+                </g>
+                <path class="wp_fill0"
+                    d="M6220300 7180000c0,24900 255200,45100 570000,45100 314800,0 570000,-20200 570000,-45100 0,-24900 -255200,-45100 -570000,-45100 -314800,0 -570000,20200 -570000,45100z" />
+                <path class="wp_fill17"
+                    d="M6613900 3904100c-46300,17600 -82700,-1300 -95100,-10900 -12400,-9700 15500,-29000 23900,-43600 3500,-6200 3500,-14900 1100,-25500 -3100,-14300 -10600,-32000 -19400,-51400l92200 -39400c0,0 8000,48100 12200,65700 800,3200 1800,5800 3200,8000 6100,10200 18700,12100 40500,22300 26500,12400 -12300,57200 -58600,74800z" />
+                <path class="wp_fill17"
+                    d="M6607300 3688100c-7400,23300 -3500,45300 8700,49200 12200,3800 28100,-11900 35500,-35200 7400,-23300 3400,-45300 -8800,-49200 -12200,-3800 -28000,11900 -35400,35200z" />
+                <path class="wp_fill18"
+                    d="M6835600 4191000l44400 -23500 55000 90400 -73200 19900c-9100,-28800 -18000,-58100 -26200,-86800z" />
+                <path class="wp_fill19"
+                    d="M6505200 5819500c8200,1000 14100,8500 13000,16800l-3300 27400c1100,100 2100,700 3300,700l542400 0c1200,0 2200,-600 3300,-700l-3400 -27400c-1000,-8300 4900,-15800 13100,-16800 7500,-1000 14400,4200 16200,11500 -1800,-14800 -14000,-26500 -29200,-26500l-542400 0c-15200,0 -27400,11700 -29200,26400 1800,-7300 8700,-12500 16200,-11400z" />
+                <path class="wp_fill19"
+                    d="M7090400 5832600c-100,-600 -400,-1000 -600,-1600 -1800,-7300 -8700,-12500 -16200,-11500 -8200,1000 -14100,8500 -13100,16800l3400 27400 57000 461800 -663000 0 57000 -461800 3300 -27400c1100,-8300 -4800,-15800 -13000,-16800 -7500,-1100 -14400,4100 -16200,11400 -200,600 -500,1100 -600,1700l-117500 952600c-1200,2200 -2200,4600 -2200,7300 0,1300 500,2500 800,3800l-46500 376900c-1000,8200 4900,15700 13100,16700 600,100 1300,100 1900,100 7500,0 13900,-5500 14900,-13100l45500 -369400 781900 0 45600 369400c900,7600 7400,13100 14900,13100 600,0 1200,0 1800,-100 8300,-1000 14100,-8500 13100,-16700l-165300 -1340600zm-688300 944800l0 0 52100 -421800 670400 0 52000 421800 -774500 0z" />
+                <g id="_1650025074736" class="girl">
+                    <polygon class="wp_fill6"
+                        points="6090900,4457400 5672400,4875800 5254000,4457400 5672400,4038900 " />
+                    <path class="wp_fill17"
+                        d="M5988900 4238500c3000,11800 12800,24600 12800,24600 0,0 -48200,20600 -72200,24500 -23900,3900 -32600,-11100 -59600,-15600 -26900,-4600 -35300,-6000 -37300,-42700 -1500,-29700 27600,-41400 47700,-35400 20100,6000 47600,36800 64500,34600 16900,-2100 41600,-9600 41600,-9600 0,0 -300,8400 2500,19600z" />
+                    <path class="wp_fill17"
+                        d="M6627300 3690100c-400,65700 -1700,97500 -24600,126300 -22800,28700 -47500,43400 -68100,45100 -25700,2100 -67700,-41100 -76600,-68100 -9100,-28000 -24600,-100800 -22100,-172800 1200,-36600 36800,-83600 77300,-86900 40400,-3300 115100,-4000 114100,156400z" />
+                    <path class="wp_fill17"
+                        d="M6431500 3724300c7200,23300 23000,39200 35200,35400 12200,-3800 16300,-25800 9000,-49100 -7200,-23400 -23000,-39200 -35200,-35400 -12200,3700 -16300,25700 -9000,49100z" />
+                    <path class="wp_fill18"
+                        d="M6735400 5766100c66100,-8100 122800,-29900 122800,11100 0,34700 -3200,32000 -116600,40200 -66400,4900 -121100,3100 -122800,-11100 -1700,-14200 50500,-32200 116600,-40200z" />
+                    <path class="wp_fill20"
+                        d="M6794400 3845300c82000,75900 216700,252700 236400,347100 4400,21000 -8300,41800 -29100,47400l-294700 79900c-6900,1900 -14200,-1400 -17300,-7800l-10600 -21700c-3700,-7500 -500,-16600 7100,-20100l220900 -116900c-63600,-120100 -108600,-145100 -108600,-145100 7600,148900 140100,483800 148700,523700 10800,49300 18900,89500 1900,93100 -54600,11400 -183300,18700 -297000,37200 -81400,13200 -81900,-17200 -70700,-150700 17000,-201600 -37100,-284300 -78400,-353800 -35600,-59900 -28200,-117900 -28200,-117900l-127600 169300c-11800,14700 -28800,24200 -47500,26900l-320200 35300c-13500,1900 -25500,-8700 -25200,-22300l100 -10500c200,-10000 6900,-18600 16600,-21100l301700 -79500c0,0 85100,-137300 125400,-193800 16900,-23800 48800,-93400 111800,-105100 198400,-36600 226100,-47600 284500,6400z" />
+                    <path class="wp_fill21"
+                        d="M6574500 4609200c0,0 2500,32700 6500,83000 500,4500 700,9300 1200,14300 12400,152900 36100,439300 45300,504700 12600,88000 107100,393200 160600,551900 2700,7900 9900,13100 18000,12900l31600 -700c10800,-200 19400,-9700 18300,-20900 -9300,-106500 -76700,-450900 -92700,-526300 -14500,-69000 -24600,-320900 12400,-434800 6100,-19000 33600,-17800 38800,1300 25700,93000 82800,295300 117000,383500 40000,102200 491100,-23300 572000,-46900 5200,-1600 8800,-6100 9300,-11500l1600 -22800c600,-7900 -5700,-14700 -13300,-14000 -77600,6500 -443200,33600 -460400,-36600 -15600,-64200 -46900,-251400 -65800,-367600l0 -200c-1200,-5900 -2100,-11300 -3000,-16700 -7700,-47800 -12600,-79900 -12600,-79900 0,0 -1600,-16400 -15600,-16900l-1800 0c-2900,-200 -6500,-400 -11500,-400 -18900,-300 -59300,1100 -175900,13300 -66800,7000 -109900,11900 -136900,16000 -4100,500 -7900,1100 -11300,1600 -25900,4500 -32300,8300 -31800,13700z" />
+                    <path class="wp_fill18 leg"
+                        d="M7457300 5190000c15000,-64900 38400,-114900 52300,-111700 14000,3200 29000,13900 -1900,123300 -18100,64100 -38400,114900 -52300,111700 -13900,-3200 -13000,-58400 1900,-123300z" />
+                    <path class="wp_fill22 hair"
+                        d="M6459900 3742300c26500,66900 10200,189100 33100,297400 22800,108300 194600,281500 342600,158400 170200,-141600 -48000,-298600 -87800,-398600 -44700,-112400 -43500,-200200 -103000,-262000 -56600,-59000 -140900,-34200 -176000,-4500 -73300,62100 -31000,153600 -8900,209300z" />
+                    <path class="wp_fill23"
+                        d="M6610400 4622800c0,-9500 -1400,-18800 -4100,-27300 3400,-500 7200,-1100 11300,-1600 2700,9300 4000,18900 4000,28900 0,33600 -15300,63800 -39400,83700 -500,-5000 -700,-9800 -1200,-14300 18100,-17600 29400,-42400 29400,-69400z" />
+                    <path class="wp_fill23"
+                        d="M6930400 4564600c5000,0 8600,200 11500,400 -2000,7700 -3100,15600 -3100,23900 0,29100 12800,55300 33100,72900 900,5400 1800,10800 3000,16700 -28700,-19400 -47400,-52300 -47400,-89600 0,-8300 900,-16700 2900,-24300z" />
+                </g>
+                <polygon class="wp_fill24" points="1888600,3276300 1888600,3276300 1888600,3276300 " />
+                <polygon class="wp_fill16" points="2099700,3065200 2099700,3065100 2099700,3065200 " />
+                <g class="wifi">
+                    <path class="wp_fill27"
+                        d="M5022900 1283100c-35000,0 -63300,-28300 -63300,-63300 -200,-325800 126600,-632200 357100,-862700 230400,-230300 536400,-357100 862000,-357100 200,0 400,0 700,0 34900,0 63300,28400 63300,63400 0,34900 -28400,63300 -63400,63300l0 0c-200,0 -400,0 -600,0 -291700,0 -566000,113600 -772400,320000 -206600,206600 -320200,481100 -320000,773000 0,35000 -28400,63400 -63300,63400l-100 0z" />
+                    <path class="wp_fill27"
+                        d="M5369700 1283100c-35000,0 -63400,-28300 -63400,-63300 0,-233200 90900,-452400 255800,-617300 164900,-164900 384100,-255700 617200,-255700 35000,0 63400,28300 63400,63300 0,35000 -28400,63300 -63400,63300 -199300,0 -386700,77700 -527700,218600 -140900,141000 -218600,328500 -218600,527800 0,35000 -28300,63300 -63300,63300z" />
+                    <path class="wp_fill27"
+                        d="M5716800 1283100c-35000,0 -63400,-28300 -63400,-63300 0,-140600 54700,-272700 154000,-372000 99300,-99300 231400,-153900 371900,-153900 35000,0 63400,28300 63400,63300 0,35000 -28400,63300 -63400,63300 -106700,0 -207000,41500 -282300,116900 -75400,75400 -116900,175600 -116900,282400 0,35000 -28300,63300 -63300,63300z" />
+                </g>
+                <g id="_1650025083248" class="cursor">
+                    <polygon class="wp_fill28"
+                        points="2846600,2809500 2586700,2549600 2159900,2122800 1961400,1924200 1961400,2210700 1961400,2658100 1961300,2658100 1961400,2658100 1961400,3175000 2243800,2892600 2382500,3227400 2583000,3144300 2444300,2809500 " />
+                    <polygon class="wp_fill16"
+                        points="2985000,2699700 2725100,2439800 2298300,2012900 2099700,1814400 2099700,2100800 2099700,2548300 2099700,2548300 2099700,2548300 2099700,3065100 2382200,2782700 2520900,3117500 2721400,3034500 2582700,2699700 " />
+                </g>
+                <path class="wp_fill29"
+                    d="M8952700 4547400c0,-33500 -27200,-60700 -60800,-60700l-16500 0c-33500,0 -60800,27200 -60800,60700l0 19700c0,33500 27300,60700 60800,60700l16500 0c33600,0 60800,-27200 60800,-60700l0 -19700z" />
+                <ellipse class="wp_fill30" cx="8882600" cy="4568900" rx="23600" ry="22300" />
+                <g id="_1650025086320" class="pc_shine">
+                    <polygon class="wp_fill9"
+                        points="9119100,4460200 8992400,4605000 8937100,4668300 8371300,5316900 8259800,5444400 8115000,5610300 8115000,4777300 8392000,4460200 " />
+                    <path class="wp_fill9"
+                        d="M9552700 4466900l-120800 138100 -55300 63300 -219100 251300 -68400 78500 -338600 388000 -54100 61700 0 400 -324700 371600 -111900 128300 -144800 166000 0 -324300 144800 -166000 207800 -237700 621500 -712300 59900 -68800 126700 -144800 232200 0c15700,0 30900,2500 44800,6700z" />
+                </g>
+                <g id="_1650025090256" class="pc_shine">
+                    <path class="wp_fill9"
+                        d="M3432500 2325800l-3411100 3908200c-9300,-30400 -14000,-62500 -14000,-95900l0 -1590900 1938900 -2221400 1486200 0z" />
+                    <path class="wp_fill9"
+                        d="M4384700 2312700l-3627000 4155100 -354600 0c-65900,0 -127100,-18600 -179500,-50700l3582600 -4104400 578500 0z" />
+                </g>
+            </g>
+        </svg>
+        <div class="" style="display: flex;justify-content: center;align-items: center;flex-direction:column;margin-right: 10%;font-family:'Londrina Outline', cursive;font-weight: bold;stroke-width:1px ;text-align: center;"> 
+            <h4 class="" style="color: #fff;font-size: 34px;">Our Projects</h4>
+            <p style="color: #fff;font-family: cursive;margin-left: 5px;">Our project includes projects in various fields like web development, data structures and many more...
+            </p>
         </div>
     </section>
+    <section id="project_section" class="container pt-5" style="padding-top: 10px !important;">
+        <div class="row m-2" style="justify-content: space-between;">
+            <div class="col-md-5 mb-3">
+                <div id="projects" class="p-3" data-aos="zoom-in-right">
 
+                    <h2><strong>E learning website</strong> </h2>
+                    <h4>It's a resource for every newbie developer where students can find their basic things. </h4>
+                    <ul class="justify-content-center align-items-center">
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Js</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    <h5>Github Link :<a href="https://github.com/SahityaRoy/E-Learning-freesite" target="_blank_">
+                            E-Learning-freesite</a></h5>
+                    <h3>Maintainer : <a href="https://github.com/SahityaRoy" target="_blank_" class="owner"><i
+                                class="fa fa-github"></i>&nbsp;<B>Sahitya Roy</B></a></h3>
+                </div>
+            </div>
+            <!-- <div class="col-md-4"></div>   -->
+
+            <div class="col-md-5  mb-3">
+                <div id="projects" class="p-3" data-aos="zoom-in">
+                    <h2><strong>Embellish</strong></h2>
+                    <h4>This repository contains different styled components in html, css, js, jquery which can be used
+                        in any website.</h4>
+                    <ul class="justify-content-center align-items-center">
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Js</li>
+                        <li>JQuery</li>
+                    </ul>
+                    <h5>Github Link : <a href="https://github.com/siddhi-244/Embellish" target="_blank_"> Embellish</a>
+                    </h5>
+                    <h3>Maintainer : <a href="https://github.com/siddhi-244" target="_blank_" class="owner"><i
+                                class="fa fa-github"></i>&nbsp;<B>Siddhi Bhanushali</B></a>
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="row m-2" style="justify-content: space-between;">
+            <div class="col-md-5  mb-3">
+                <div id="projects" class="p-3" data-aos="zoom-in-left">
+                    <h2><strong>Wizard-Of-Docs</strong></h2>
+                    <h4>An open source project to bring all the data structures and algorithms docs under one
+                        repository.</h4>
+                    <ul class="justify-content-center align-items-center">
+                        <li>Data structures and algorithm</li>
+                    </ul>
+                    <h5>Github Link : <a href="https://github.com/HackClubRAIT/Wizard-Of-Docs"
+                            target="_blank_">Wizard-of-Docs</a></h5>
+                    <h3>Maintainer : <a href="https://github.com/siddhi-244" target="_blank_" class="owner"><i
+                                class="fa fa-github"></i>&nbsp;<B>Siddhi Bhanushali</B></a>
+                        <br>
+                        <a href="https://github.com/girija0707" target="_blank_" class="owner"><i
+                                class="fa fa-github"></i>&nbsp;<B>Girija Gupte</B></a>
+                    </h3>
+                </div>
+            </div>
+            <!-- <div class="col-md-4"></div>   -->
+
+            <div class="col-md-5 mb-3">
+                <div class="m-2 p-3" id="projects" data-aos="zoom-in-up">
+                    <h2><strong>Frontend-owls</strong></h2>
+                    <h4>An open source project to bring all front end documentation under one repository.</h4>
+                    <ul class="justify-content-center align-items-center">
+                        <li>Frontend</li>
+                    </ul>
+                    <h5>Github Link : <a href="https://github.com/HackClubRAIT/Frontend-Owls"
+                            target="_blank_">Frontend-Owls</a></h5>
+                    <h3>Maintainer : <a href="https://github.com/siddhi-244" target="_blank_" class="owner"><i
+                                class="fa fa-github"></i>&nbsp;<B>Siddhi Bhanushali</B></a>
+                        <br>
+                        <a href="https://github.com/girija0707" target="_blank_" class="owner"><i
+                                class="fa fa-github"></i>&nbsp;<B>Girija Gupte</B></a>
+                    </h3>
+                </div>
+            </div>
+            <!-- <div class="col-md-4"></div> -->
+        </div>
+
+    </section>
 </body>
 <script>
     AOS.init({
-      duration: 1200,
+        duration: 1200,
     })
 </script>
+
 </html>

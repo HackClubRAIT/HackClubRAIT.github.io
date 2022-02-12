@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,172 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="icon" href="./images/hackclubrait-logo.png">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <style>
+        .team_svg_section {
+            width: 100% !important;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 20px;
+            background: linear-gradient(90deg,#362f5abd , #212529 80%);
+            padding: 20px;
+            padding-top: none;
+            padding-right: none;
+          
+        }
+
+        .team_text_build {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            font-family: cursive;
+        }
+
+        .team_text_build h2 {
+            font-family: "Londrina Outline", cursive;
+            font-weight: 700;
+            color: #fff;
+            font-size: 3rem;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+            margin-left: 1.3%;
+            margin-bottom: 10px;
+        }
+
+        svg {
+            max-width: 50%;
+            margin: 0 auto;
+            margin-left: 0px !important;
+            margin-right: 3% !important;
+            display: block;
+            overflow: visible;
+            padding-top: 10%;
+        }
+
+        .fly_plane {
+            transform: translate(-45%, 30%);
+            animation: real-man 1.5s ease-in-out forwards;
+        }
+
+        .plane_fil19,
+        .plane_fil5 {
+            transform: translatey(-15%);
+            opacity: 0;
+            animation: real-man 1.6s ease-in-out forwards;
+        }
+
+        .shake-hand-l {
+            animation: real-man 1.8s ease-in-out forwards;
+            transform: translate(-30%, -20%);
+        }
+
+        .shake-hand-r {
+            animation: real-man 1.8s ease-in-out forwards;
+            transform: translate(30%, 20%);
+        }
+
+        .blinking_elem {
+            display: none;
+        }
+
+        @keyframes real-man {
+            to {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+
+        .one {
+            opacity: 0;
+            -webkit-animation: dot 1.3s infinite;
+            -webkit-animation-delay: 0s;
+            animation: dot 1.3s infinite;
+            animation-delay: 0s;
+        }
+
+        .two {
+            opacity: 0;
+            -webkit-animation: dot 1.3s infinite;
+            -webkit-animation-delay: 0.2s;
+            animation: dot 1.3s infinite;
+            animation-delay: 0.2s;
+        }
+
+        .three {
+            opacity: 0;
+            -webkit-animation: dot 1.3s infinite;
+            -webkit-animation-delay: 0.3s;
+            animation: dot 1.3s infinite;
+            animation-delay: 0.3s;
+        }
+
+        @keyframes dot {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+        @media(max-width:1200px) {
+            .team_svg_section{
+                width: 100% !important;
+            }
+            .team_svg_section h2{
+                font-size: 1.52rem;
+            }
+            .team_svg_section h4{
+                font-size: 1.25rem;
+            }
+        }
+        @media (max-width:700px){
+            .team_svg_section{
+                padding-top: 40px;
+            }
+            .team_svg_section h2{
+                font-size: 1.3rem;
+            }
+            .team_svg_section h4{
+                font-size: 0.8rem;
+            }
+        }
+        @media (max-width:800px){
+            #team_img:hover{
+                transform: scale(1) !important;
+            }
+        }
+        @media screen and (max-device-width:664px) and (min-device-width:515px){
+            #team_img{
+                width: 180px !important;
+            }
+            #team_img img{
+                width: 140px !important;
+            }
+        }
+    </style>
 </head>
+
 <body class="scroll_bar_visible">
     <nav class="nav navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="progress-container">
@@ -24,48 +184,281 @@
         <a class="header" href="index.html">
             <img id="logo" src="./images/hackclubrait-logo.png">
             <div class="logo_header">
-            <span style="color: #eb3750;"> <</span>
-            <span style="color: #eb3750;">HackClub</span>
-            <span style="color: #eb3750;">/></span>
+                <span style="color: #eb3750;">
+                    < </span>
+                        <span style="color: #eb3750;">HackClub</span>
+                        <span style="color: #eb3750;">/></span>
             </div>
-        </a> 
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse mx-3" id="navbarSupportedContent">
-          <ul class="nav navbars navbar-nav ms-auto">
-            <li><a href="index.html" class="hover-line nav navbars">HOME</a></li>
-            <li><a href="team.html" class="active hover-line nav navbars">TEAM</a></li><!-- NAVBAR HIGHLIGHT FOR CURRENT PAGE -->
-            <li><a href="projects.html"  class="hover-line nav navbars">PROJECTS</a></li>
-            <li><a href="contributer.html"  class="hover-line nav navbars">CONTRIBUTORS</a></li>
-            <li><a href="opportunity.html"  class="hover-line nav navbars">OPPORTUNITIES</a></li>
-            <li><a href="blogs.html"  class="hover-line nav navbars">BLOGS</a></li>
-            <li><a href="contact.html"  class="hover-line nav navbars">CONTACT US</a></li>
+            <ul class="nav navbars navbar-nav ms-auto">
+                <li><a href="index.html" class="hover-line nav navbars">HOME</a></li>
+                <li><a href="team.html" class="active hover-line nav navbars">TEAM</a></li>
+                <!-- NAVBAR HIGHLIGHT FOR CURRENT PAGE -->
+                <li><a href="projects.html" class="hover-line nav navbars">PROJECTS</a></li>
+                <li><a href="contributer.html" class="hover-line nav navbars">CONTRIBUTORS</a></li>
+                <li><a href="opportunity.html" class="hover-line nav navbars">OPPORTUNITIES</a></li>
+                <li><a href="blogs.html" class="hover-line nav navbars">BLOGS</a></li>
+                <li><a href="contact.html" class="hover-line nav navbars">CONTACT US</a></li>
         </div>
-      </nav>
+    </nav>
+    <section class="team_svg_section">
+        <svg class="plane_man" xmlns="http://www.w3.org/2000/svg" width="45%" xml:space="preserve" version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 4107.7 3273.73" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <style type="text/css">
+                    .plane_str0 {
+                        stroke: #22116B;
+                        stroke-width: 14.26;
+                        stroke-miterlimit: 22.9256
+                    }
 
+                    .plane_fil24 {
+                        fill: #140856
+                    }
+
+                    .plane_fil9 {
+                        fill: #160A5B
+                    }
+
+                    .plane_fil15 {
+                        fill: #170B5C
+                    }
+
+                    .plane_fil29 {
+                        fill: #180C5E
+                    }
+
+                    .plane_fil20 {
+                        fill: #1D0E62
+                    }
+
+                    .plane_fil6 {
+                        fill: #221167
+                    }
+
+                    .plane_fil21 {
+                        fill: #231269
+                    }
+
+                    .plane_fil4 {
+                        fill: #24126A
+                    }
+
+                    .plane_fil23 {
+                        fill: #25136B
+                    }
+
+                    .plane_fil7 {
+                        fill: #433B9B
+                    }
+
+                    .plane_fil10 {
+                        fill: #453C9E
+                    }
+
+                    .plane_fil8 {
+                        fill: #4845A4
+                    }
+
+                    .plane_fil22 {
+                        fill: #4846A5
+                    }
+
+                    .plane_fil18 {
+                        fill: #936D6D
+                    }
+
+                    .plane_fil11 {
+                        fill: #AA8383
+                    }
+
+                    .plane_fil5 {
+                        fill: #ADABD6
+                    }
+
+                    .plane_fil19 {
+                        fill: #B3B0D6
+                    }
+
+                    .plane_fil2 {
+                        fill: #C2C2F6
+                    }
+
+                    .plane_fil26 {
+                        fill: #C4CCD6
+                    }
+
+                    .plane_fil3 {
+                        fill: #D1D0F9
+                    }
+
+                    .plane_fil0 {
+                        fill: #DEE0F7
+                    }
+
+                    .plane_fil25 {
+                        fill: #E2B1A6
+                    }
+
+                    .plane_fil17 {
+                        fill: #E3B2A6
+                    }
+
+                    .plane_fil16 {
+                        fill: #E5B6AB
+                    }
+
+                    .plane_fil14 {
+                        fill: #EDEEFA
+                    }
+
+                    .plane_fil28 {
+                        fill: #EEF3FC
+                    }
+
+                    .plane_fil1 {
+                        fill: #F2F3FC
+                    }
+
+                    .plane_fil27 {
+                        fill: #F8CEC4
+                    }
+
+                    .plane_fil12 {
+                        fill: #FBD0C4
+                    }
+
+                    .plane_fil13 {
+                        fill: #FCD1C5
+                    }
+                </style>
+            </defs>
+            <g id="Layer_x0020_1_plane">
+                <metadata id="CorelCorpID_0Corel-Layer_plane" />
+                <g id="_2373484953488">
+
+                    <g class="fly_plane">
+                        <path class="plane_fil2"
+                            d="M2794.85 1300.96l732.11 -499.28c-107.68,46.36 -214.37,106.32 -333.46,164.79 -54.6,26.81 -116.92,51.44 -174.21,81.56 -48.09,25.29 -121.61,56.55 -167.14,85.32 -90.95,35.81 -174.57,86.22 -260.03,126.1 -482.79,218.25 -955.06,457.31 -1429.58,690.43l8.55 34.41 5.91 31.17 72.03 276.47c1.18,1.95 2.53,4.5 3.16,6.08 0.61,1.55 2.11,4.2 2.79,6.13l18.54 64.73 22.87 102.69 5.7 17.03 36.98 156.19 21.55 35.59c0.97,-34.82 71.95,-206.43 89.45,-252.64l81.01 -218.91c6.04,-13.05 2.28,-7.13 9.5,-16.1 13.27,-16.48 -5.75,0.39 15.83,-14.54 -4.75,-19.91 -5.44,-12.36 15.88,-28.24l220.22 -150.38c42.05,-27.01 82.63,-56.25 123.58,-84.64 293.26,-203.31 585.99,-409.63 878.78,-613.95l0 0z" />
+                        <path class="plane_fil3"
+                            d="M2041.8 2456.88c7.89,13.69 250.44,152.32 285.13,169.21 52.84,-47.04 158.26,-235.63 214.66,-316.52 17.91,-25.68 40.92,-43.65 50.57,-86.44l21.7 -24.4 21.55 -30.12c10.39,-16.78 24.6,-43.58 38.1,-50.68 13.19,-33.63 37.64,-56.27 43.35,-82.96 10.03,-6.58 9.2,-1.83 14.45,-11.38 15.72,-22.72 25.9,-43.24 41.24,-61.47l224.93 -344.72 162.96 -244.87c25.23,-30.06 49.11,-71.77 71.69,-106.17 103.78,-158.03 204.76,-312.86 312.4,-469.5 0.57,-18.03 15.49,5.71 -5.32,-14.49 -397.5,146.93 -1115.17,257.62 -1580.25,359.24 -278.43,60.82 -1300.99,228.09 -1578.36,353.86 29.13,23.38 184.93,114.89 212.76,118.53 14.71,19.53 26.03,21.88 51.11,36.83 19.34,11.53 34.6,22.66 55.01,25.26 18.06,23.28 64.76,43.55 91.34,59.43 25.15,15.02 70.19,44.99 94.51,48 17.8,24.07 145.08,96.47 172.55,99.41 38.28,22.1 50.89,32.66 76.58,39.55 26.53,-11.55 36.13,-16.25 59.86,-29.38l254.27 -120.27 134.71 -61.49 747.42 -331.5c41.41,-5.84 208.09,-95.51 261.4,-120.38 85.47,-39.88 169.08,-90.28 260.03,-126.1 45.52,-28.77 119.05,-60.03 167.14,-85.32 57.29,-30.13 119.61,-54.76 174.21,-81.56 119.1,-58.47 225.79,-118.44 333.47,-164.79l-732.12 499.28 -514.59 359.12 -20.42 14.67c-117.69,102.22 -606.98,495.99 -685.96,508.82 9.38,11.4 0.64,6.51 21.1,19.29 24.27,15.17 12.72,8.94 33.92,11.25 14.21,20.36 27.51,24.21 49.15,36.52 28.69,16.32 29.34,23.34 57.17,25.63 21.2,29.6 31.16,15.33 42.66,40.34 40.32,6.74 65.14,34.16 106.44,48.78l157.49 91.49 0 -0.01z" />
+                        <path class="plane_fil4"
+                            d="M1360.6 2680.36c5.34,-18.18 -0.77,-8.42 16.91,-17.6l43.89 -30.88c12.74,-30.15 31.47,-38.45 57.94,-52.43 2.47,-22.37 217.7,-192.84 258.25,-226.51 17.91,-14.87 21.4,-24.11 40.29,-36.33 -11.49,-25.01 -21.46,-10.74 -42.66,-40.34 -27.83,-2.29 -28.47,-9.31 -57.17,-25.63 -21.64,-12.31 -34.94,-16.15 -49.15,-36.52 -21.21,-2.32 -9.65,3.92 -33.92,-11.25 -20.46,-12.78 -11.71,-7.88 -21.1,-19.29l-17.49 -5.4c-21.57,14.93 -2.56,-1.94 -15.83,14.54 -7.21,8.97 -3.46,3.04 -9.5,16.1l-81.01 218.91c-17.5,46.21 -88.47,217.82 -89.45,252.64l0.01 0z" />
+                    </g>
+                    <g>
+                        <path class="plane_fil5"
+                            d="M1156.67 1699.33c39.68,11.96 121.13,13.37 165.51,11.68l46.23 -7c68.01,-24.04 114.86,-41.94 153.93,-86.18 48.58,-55.01 37.65,-117.21 -7.54,-168.61 -33.02,-37.57 -116.59,-75.93 -232.57,-78.5 -105.05,2.69 -290.62,19.86 -319.87,142.13 -4.2,122.52 103.65,159.2 194.3,186.48z" />
+                        <g class="shake-hand-l">
+                            <path class="plane_fil6"
+                                d="M1048.37 773.27c15.72,68.84 171.78,178.94 181.84,189.77 13.58,14.62 5.54,1.33 15.67,23.17 10.22,-6.15 18.1,-2.37 12.42,-7.67 -56.85,69.28 -70.01,74.21 -166.79,116.01 -3.53,79.3 -20.26,155.85 -14.79,236.26l42.61 197c19.9,41.35 65.5,12.36 89.23,-3.74l-17.12 -68.05 35.43 8.22c11.69,-26.76 5.68,-4.34 32.07,-24.65 29.3,-22.56 5.52,-22.44 30.71,-34.08 -11.24,-21.26 -7.39,2.07 -7.39,-34.77 2.72,-22.98 1.89,-50.16 12.57,-63.74 -7.8,-86.87 55.13,-204.28 51.85,-330.45l37.24 10c7.08,-8.62 3.23,-12.46 4.41,-17.82 -4.41,-17.2 2.98,-2.88 -10.09,-15.97 -1.99,-2 -10.95,-8.25 -12.72,-9.42l-92.6 -54.09c-157.92,-94.95 -173.03,-116.91 -293.93,-246.42 -20.85,-22.33 -4.8,-16.83 -17.26,-11.54 7.91,19.33 30.29,45.92 44.15,62.65 9.3,11.22 15.7,17.53 24.45,29.27 20.96,28.16 12.83,9.67 18.04,50.08l0 0z" />
+                            <path class="plane_fil7"
+                                d="M1191.06 299.86c32.73,37.13 105.99,183.43 76.96,244.63l-2.41 54.54c-42.58,-50.25 -18.38,-70.88 -59.56,-110.96 -10.9,19.25 6.34,22.94 -39.61,-47.26 -24.18,-36.95 -112.22,-133.27 -147.08,-151.67l-1.41 -36.48 1.92 -3.88c-18.82,18.64 -25.84,52.32 -46.14,80.82 -16.62,23.33 -47.93,55.68 -50.06,83.26 22.79,20.5 -4.57,0.69 32.57,14.14 32.72,11.85 77.03,42 88.7,73.38 9.86,26.53 -1.95,28.6 27.41,71.7 13.96,20.49 27.61,36.37 45.09,62.66 30.32,45.6 37.45,98.22 96.67,115.5 69.54,20.3 71.72,42.33 132.15,74.26 -10.09,-95.14 -18.18,-189.02 -23.36,-285.06 -5.03,-93.37 -52.01,-222.28 -38.53,-246.96 -13.9,-40.65 -32.32,-66.12 -75.95,-69.22l-17.36 76.61 0.01 0z" />
+                            <path class="plane_fil8"
+                                d="M961.72 631.26c12.46,-5.29 -3.58,-10.79 17.26,11.54 120.89,129.51 136.01,151.46 293.93,246.42l92.6 54.09c1.76,1.17 10.72,7.42 12.72,9.42 13.07,13.09 5.67,-1.23 10.09,15.97l10.81 -1.21 36.14 -72.92c-16.75,-29.68 -38.47,-25.04 -57.02,-54.52 -26.4,-5.29 -15.53,2.15 -31.97,-15.57 -60.43,-31.92 -62.61,-53.96 -132.15,-74.26 -59.22,-17.28 -66.35,-69.9 -96.67,-115.5 -17.48,-26.29 -31.12,-42.17 -45.08,-62.66 -29.36,-43.1 -17.55,-45.18 -27.41,-71.7 -11.67,-31.38 -55.98,-61.53 -88.7,-73.38 -37.14,-13.45 -9.78,6.36 -32.57,-14.14 -56.34,60.11 -14.19,175.05 38.05,218.42l-0 0z" />
+                            <path class="plane_fil9"
+                                d="M1245.88 986.21c-15.78,4.77 -56.93,42.73 -95.71,59.16 -70.01,29.66 -71.52,2.78 -106.32,-29.36 7.01,59.85 25.26,105.47 21.51,169.58 -4.24,72.55 -6.18,111.09 -4.7,185.64l7.98 38.33c32.76,150.72 16.39,131.17 102.24,229.03 4.71,5.37 7.44,7.95 10.84,11.59 0.89,0.95 5.03,11.36 6.65,7.1 0.42,-1.12 2.24,2.21 3.21,3.44 41.07,14.49 61.19,25.52 105.96,9.61 10.25,-42.06 -14.79,-66.58 -33.22,-86.99 -16.49,-18.26 -41.61,-45.71 -55.79,-59.27 -23.72,16.11 -69.33,45.09 -89.23,3.74l-42.61 -197c-5.47,-80.4 11.26,-156.96 14.79,-236.26 96.78,-41.8 109.94,-46.73 166.79,-116.01 5.68,5.3 -2.19,1.52 -12.42,7.67l0 0.01z" />
+                            <path class="plane_fil10"
+                                d="M1043.85 1016.01c34.79,32.13 36.31,59.02 106.32,29.36 38.78,-16.43 79.93,-54.39 95.71,-59.16 -10.13,-21.83 -2.09,-8.54 -15.67,-23.17 -10.06,-10.83 -166.12,-120.93 -181.84,-189.77 -22.38,25.71 -35.91,184.03 -4.52,242.74l0 0z" />
+                            <path class="plane_fil11"
+                                d="M990.82 152.77c41.86,9.93 51.85,3.89 92.81,-0.16 19.39,-18.77 26.76,-8.82 58.14,-17.05 22.41,-5.87 36.23,-17.52 50,-25.32l0.42 -35.09c-16.96,-50.23 -34.13,-49.56 -74.46,-75.16l-54.7 0c-45.66,31.15 -112.86,63.86 -72.21,152.77l-0 -0z" />
+                            <path class="plane_fil4"
+                                d="M1346.26 824.48c16.45,17.72 5.57,10.28 31.97,15.57l36.44 -15.94c-5.11,-76.6 -26.67,-210.98 -44.58,-286.94 -17.29,-73.34 -60.35,-173.18 -85.73,-244.7 -13.48,24.67 33.5,153.59 38.53,246.95 5.18,96.03 13.27,189.91 23.36,285.06l0 0z" />
+                            <path class="plane_fil12"
+                                d="M1083.63 152.6c-2.84,34.9 -0.08,40.2 -24.21,53.23 -17.66,-24.56 -2.28,-19.29 -30,-34.74l-27.65 12.82c1.34,1.9 3.78,2 4.47,5.33l13.85 22.06c9.19,30.44 5.84,9.55 -0.23,37.45l-1.92 3.88 11.9 0 14.49 -31.82c4.48,5.46 4.61,5.3 11.22,14.75 5.03,7.18 4.03,7.42 9.32,14.51 26.68,35.72 57.99,30.91 80.76,59.49l45.42 -9.72 17.36 -76.61c-5.96,-49.09 4.17,-113.32 -16.22,-148.1l-0.42 35.09c-13.77,7.8 -27.59,19.45 -50,25.32 -31.38,8.23 -38.75,-1.73 -58.14,17.05l-0 -0z" />
+                            <path class="plane_fil13"
+                                d="M1608.71 1088.12c33.18,-16 9.07,-1.76 21.32,-17.12 -23.17,-65.42 -100.67,-70.96 -105.21,-136.65 32.45,-0.61 33.74,10.83 55.83,-9.74 -10.28,-22.11 -20.3,-17.61 -54.99,-25.43 -41.53,-9.37 -39.6,-8.17 -84.29,-4.06l-17.13 59.84c53.95,33.71 45.25,56.2 134.09,95.51 26.43,11.69 39.31,12.9 50.38,37.67l0 -0z" />
+                            <path class="plane_fil14"
+                                d="M1206.05 488.06c-14.51,-30.23 -24.15,-64.59 -38.97,-94.18 -14.53,-29 -73.31,-67.89 1.04,-70.25 10.65,25.8 6.73,29.83 21.9,55.01 28.52,47.34 72.76,109.97 78.01,165.84 29.02,-61.2 -44.23,-207.5 -76.96,-244.63l-45.42 9.72c-7.88,15.59 -4.46,15.36 -34.07,9.41 -13.07,-2.62 -23.04,-6.9 -33.76,-13.2 -23.76,-13.96 -37.54,-30.46 -47.97,-53.14l-11.9 0 1.41 36.48c34.87,18.4 122.91,114.72 147.08,151.67 45.95,70.2 28.71,66.51 39.61,47.26l0 0z" />
+                            <path class="plane_fil9"
+                                d="M1226.85 1464.22c63.2,21.04 148.24,87.82 191.65,27.42 -4.73,-44.34 -73.43,-86.76 -128.88,-86.15 -25.2,11.64 -1.41,11.52 -30.71,34.08 -26.39,20.32 -20.38,-2.11 -32.07,24.65l0 -0z" />
+                            <path class="plane_fil15"
+                                d="M1206.05 488.06c41.19,40.08 16.98,60.71 59.56,110.96l2.41 -54.54c-5.24,-55.88 -49.48,-118.5 -78.01,-165.84 -15.17,-25.18 -11.25,-29.21 -21.9,-55.01 -74.34,2.36 -15.56,41.25 -1.04,70.25 14.82,29.59 24.45,63.95 38.97,94.18l-0 -0z" />
+                            <path class="plane_fil16"
+                                d="M1399.12 967.49c39.59,12.17 67.52,44.89 96.1,69.16 26.88,22.83 66.1,43.03 113.49,51.48 -11.08,-24.77 -23.95,-25.98 -50.38,-37.67 -88.85,-39.31 -80.14,-61.79 -134.09,-95.51l17.13 -59.84 -6.1 -0.53 -36.14 72.92 0 0z" />
+                            <path class="plane_fil17"
+                                d="M1029.84 252.65c10.43,22.68 24.2,39.18 47.97,53.14 10.72,6.3 20.7,10.58 33.76,13.2 29.61,5.94 26.19,6.18 34.07,-9.41 -22.77,-28.58 -54.08,-23.77 -80.76,-59.49 -5.29,-7.08 -4.3,-7.32 -9.32,-14.51 -6.61,-9.45 -6.75,-9.29 -11.22,-14.75l-14.49 31.82z" />
+                            <path class="plane_fil18"
+                                d="M1001.78 183.92l27.65 -12.82c27.71,15.44 12.33,10.18 30,34.74 24.12,-13.03 21.36,-18.34 24.21,-53.23 -40.96,4.06 -50.95,10.08 -92.81,0.16l10.96 31.16 0 0z" />
+                        </g>
+                    </g>
+                    <g>
+                        <path class="plane_fil19"
+                            d="M1920.23 2105.78c-1.85,29.83 -3.54,59.65 9.18,84.43 14.82,28.89 28.78,23.66 30.38,46.07 52.06,26.71 73.36,45.37 144.93,63.83l29.33 4.52c85.94,12.85 178.66,6.96 253.5,-25.21 37.37,-16.06 59.48,-30.01 83.84,-54.99 36.31,-37.23 41.54,-53.37 36.79,-118.65 -14.88,-30.17 -28.42,-41.04 -40.56,-65.26 -18.79,-3.99 -5.95,-0.3 -23.65,-10.55 -4.92,-2.85 -13.9,-9.18 -18.74,-12.04 -15.19,-8.96 -26.16,-13.84 -43.66,-19.5 -87.51,-33.06 -134.79,-29.2 -217.69,-29.4 -115.75,11.11 -204.46,56.04 -243.65,136.75l0 0z" />
+                        <g class="shake-hand-r">
+                            <path class="plane_fil10"
+                                d="M2245.57 925.82l-47.3 21.78 -11.61 18.86c-16.51,-9.27 -14.51,17.39 -12.05,-24.15 -1.59,2.23 -2.64,5.28 -3.58,7.39 -18.11,40.48 -51.69,82.42 -54.93,77.22 -0.95,-1.52 -3.47,3.49 -5.36,5.06 -18.34,22.18 -24.33,55.14 -27.98,91.94l-9.34 296.08c37.89,-55.2 38.82,-157.85 45.93,-231.68 11.3,-117.43 106.65,-118 149.79,-67.22l8.26 11.24c78.1,87.7 -86.98,439.42 -104.85,537.39 59.79,-6.36 133.47,8.55 175.4,-35.69l9.18 14.1c14.28,-16.87 13.77,-23.08 34.11,-42.99 18.85,-18.46 22.28,-19.93 26.43,-53.84 7.33,-59.94 2.53,-85.85 -7.24,-145.16 -19.45,-97.08 -21.8,-252.09 25.33,-330.32 19.23,-75.38 33.67,-69.79 3.77,-158.81 -15.29,-45.52 -30.99,-99.19 -75.09,-112.18l-19.69 -1.54c9.75,17.47 15.31,28.03 16.14,58.3 -40.54,26.65 -53.48,44.72 -115.32,64.24l-0 -0.01z" />
+                            <path class="plane_fil20"
+                                d="M2172.56 1669.72c-28.5,-11.94 -38.89,-21.24 -70.7,-15.15l-2.06 46.11 -2.37 21.12 1.99 6.43 29.24 7.38 23.71 -49.47c33.4,4.65 134.37,17.66 154.14,-4.18 -7.86,18.95 -13.32,119.41 -16.91,149.88 -7.61,64.51 7.88,81.68 9.83,140.98l-128 -2.42c-32.04,48.77 -48.94,39.67 -0.4,86.07 26.42,25.25 27.83,69.88 30.26,114.55 22.58,49.05 73,104.21 122.8,67.3l2.5 12.25c22.55,-29.94 -12.66,-63.18 -3.95,-119.29 91.88,28.24 53.8,-39.18 58.93,-132.84l2.42 -139.22 -12.84 -82.38 -10.92 -66.35 -0.27 -24.09 -2.83 -38.26 -9.18 -14.1c-41.93,44.23 -115.61,29.34 -175.4,35.68l0 -0z" />
+                            <path class="plane_fil8"
+                                d="M2073.42 1420l-35.56 143.51 -5.99 31.86 -0.99 42.18c14.8,21.9 14.07,27.1 43.55,43.44 -7.48,-27.08 5.68,-36.44 21.94,-62.62 89.87,-144.67 179.45,-310.67 181.04,-486.04l-8.26 -11.24c-43.14,-50.78 -138.49,-50.21 -149.79,67.22 -7.11,73.83 -8.04,176.47 -45.93,231.68l-0 0z" />
+                            <path class="plane_fil21 plane_str0"
+                                d="M2118.4 1859.99l45.48 109.04 7.55 1.37 128 2.42c-1.95,-59.3 -17.45,-76.47 -9.83,-140.98 3.6,-30.47 9.06,-130.93 16.91,-149.88 -19.77,21.84 -120.74,8.83 -154.14,4.18l-23.71 49.47 -29.24 -7.38 18.99 131.75z" />
+                            <path class="plane_fil11"
+                                d="M2119.1 651.91c22.24,11.62 21.54,6.83 30.9,30.87 59.05,21.12 128.59,76.84 200.87,21.67 12.4,11.01 3.07,-5.64 6.36,13.55 0.04,-0.04 17.04,0.08 13.4,-52.95 -9.43,-137.41 -265.06,-131.69 -251.53,-13.14l0 0z" />
+                            <path class="plane_fil22"
+                                d="M1867.35 970.9c0.55,28.85 6.34,52.09 14.65,72.35 34.54,23.58 170.92,-20.69 228.75,-11.27 1.89,-1.57 4.41,-6.58 5.36,-5.06 3.24,5.2 36.82,-36.73 54.93,-77.22 0.94,-2.11 1.99,-5.16 3.58,-7.39 0.51,-0.91 6.71,-14.31 7.84,-15.77 11.85,-15.36 3.59,-7.05 19.5,-14.82l6.31 -17.28 -20.47 1.97c-40.86,4.93 -299.62,60.51 -320.44,74.49l0 -0z" />
+                            <path class="plane_fil23"
+                                d="M2074.43 1680.99c11.03,0.09 5.48,3.29 13.25,-3.73l12.12 23.43 2.06 -46.11c31.81,-6.09 42.2,3.21 70.7,15.15 17.87,-97.96 182.95,-449.68 104.85,-537.39 -1.6,175.36 -91.17,341.36 -181.04,486.04 -16.26,26.17 -29.42,35.54 -21.94,62.62l0 0z" />
+                            <path class="plane_fil24"
+                                d="M2101.73 2281.86c55.58,10.15 74.08,10.48 133.61,5.09 46.49,-4.21 84.08,5.79 91.25,-36.38l-2.5 -12.25c-49.79,36.91 -100.22,-18.25 -122.8,-67.3 -50.31,-3.92 -116.58,1.64 -149.04,34.9 -2.13,52.61 24.88,51.11 49.48,75.95z" />
+                            <path class="plane_fil18"
+                                d="M2224.39 761.25c41.09,20 25.79,28.27 51.27,65.27 35.49,1.27 32.4,-2.65 60.5,-18.19l7.02 -13.1c5.94,-33.01 16.18,-44.07 14.06,-77.24 -3.29,-19.19 6.04,-2.54 -6.36,-13.55 -72.28,55.17 -141.82,-0.55 -200.87,-21.67 -5.23,29.23 17.59,65.88 30.36,94.88 0.65,1.49 1.67,4.18 2.83,6.09l41.19 -22.5 -0 -0z" />
+                            <path class="plane_fil12"
+                                d="M1882 1043.25c-8.31,-20.26 -14.1,-43.51 -14.65,-72.35 -42.15,-0.32 -78.15,-22.25 -125.86,-30.99 15.38,31.23 9.85,12.9 35.12,33.19 -37.19,34.63 -61.81,18.15 -70.3,77.05 55.96,30.69 109.07,6.99 175.68,-6.9z" />
+                            <path class="plane_fil12"
+                                d="M2167.74 862.78c30.53,-5.54 35.25,-6.63 56.12,-17.11 6.07,-34.59 -1.15,-16.34 -3.04,-37.16 -1.68,-18.54 3.15,-17.79 3.57,-47.26l-41.19 22.5c-1.16,-1.92 -2.18,-4.61 -2.83,-6.1 -12.77,-29 -35.59,-65.65 -30.36,-94.88 -9.36,-24.04 -8.66,-19.24 -30.9,-30.87 -1.39,27.7 -5.26,88.77 -0.18,110.34 3.4,14.41 11.52,19.23 18.86,47.64 9.33,36.17 0.21,39.19 29.97,52.89l-0 0z" />
+                            <path class="plane_fil25"
+                                d="M2167.74 862.78l31.25 24.8c-0.68,0.58 -10.61,8.37 -11.21,8.83l20.47 -1.97c6.79,-3.31 7.37,-3.25 21.14,-6.27 44.4,-26.44 100.64,-13.78 106.75,-79.83 -28.09,15.53 -25,19.45 -60.5,18.19 -25.48,-37 -10.17,-45.27 -51.27,-65.27 -0.42,29.48 -5.25,28.72 -3.57,47.26 1.89,20.82 9.11,2.56 3.04,37.16 -20.87,10.48 -25.59,11.58 -56.12,17.11l0.01 0z" />
+                            <path class="plane_fil26"
+                                d="M2336.15 808.33c-6.11,66.05 -62.36,53.4 -106.75,79.83 23.6,18.27 22.8,10.1 16.18,37.66 61.85,-19.52 74.78,-37.59 115.32,-64.24 -0.83,-30.27 -6.4,-40.84 -16.14,-58.3l19.69 1.54 -21.27 -9.58 -7.02 13.1 -0 0z" />
+                            <path class="plane_fil27"
+                                d="M2097.43 1721.8l2.37 -21.12 -12.12 -23.43c-7.77,7.02 -2.22,3.83 -13.25,3.73 -29.47,-16.34 -28.75,-21.53 -43.55,-43.44 -29.37,22.22 40.94,76.18 66.55,84.25l-0 0z" />
+                            <path class="plane_fil28"
+                                d="M2208.26 894.44l-6.31 17.28 -3.68 35.89 47.3 -21.78c6.62,-27.56 7.42,-19.39 -16.18,-37.66 -13.77,3.02 -14.35,2.96 -21.14,6.27l0 0z" />
+                            <path class="plane_fil29"
+                                d="M2174.61 942.32c-2.45,41.54 -4.46,14.89 12.05,24.15l11.61 -18.86 3.68 -35.89c-15.91,7.77 -7.65,-0.53 -19.5,14.82 -1.13,1.46 -7.33,14.87 -7.84,15.77l0 0z" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+        <div class="team_text_build">
+            <h2>Building Our Team <span class="one">.</span><span class="two">.</span><span class="three">.</span></h2>
+            <h4>Meet our Wonderful Team members</h4>
+        </div>
+    </section>
     <div class="team my-10">
-        <h1>OUR TEAM</h1>
+        <h1 style="font-family: 'Londrina Outline',cursive;font-weight: bold;">OUR TEAM</h1>
         <div class="row">
             <div class="col-2" id="team_img" data-aos="fade-right">
                 <img src="./images/girija gupte.jpg">
                 <span>
-                    <a href="https://www.linkedin.com/in/girija-g-778935197/" target="_blank_"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/gupte_girija07/" target="_blank_"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/girija-g-778935197/" target="_blank_"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/gupte_girija07/" target="_blank_"><i
+                            class="fa fa-instagram"></i></a>
                     <a href="https://github.com/girija0707" target="_blank_"><i class="fa fa-github"></i></a>
                 </span>
                 <h3>Girija Gupte</h3>
                 <h5>Lead</h5>
-                
+
             </div>
             <div class="col-2" id="team_img" data-aos="fade-left">
                 <img src="./images/Kshitija.jpg">
                 <h3>Kshitija Bharambe</h3>
                 <h5>Co-Lead</h5>
                 <span>
-                    <a href="https://www.linkedin.com/in/kshitija-bharambe/" target="_blank_"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/_kshitijaaa_/" target="_blank_"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kshitija-bharambe/" target="_blank_"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_kshitijaaa_/" target="_blank_"><i
+                            class="fa fa-instagram"></i></a>
                     <a href="https://github.com/kshitija-2001" target="_blank_"><i class="fa fa-github"></i></a>
                 </span>
             </div>
@@ -77,7 +470,8 @@
                 <h3>Purva Kharsambale</h3>
                 <h5>Creative Lead</h5>
                 <span>
-                    <a href="https://www.linkedin.com/in/purva-kharsambale-166603197/" target="_blank_"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/purva-kharsambale-166603197/" target="_blank_"><i
+                            class="fa fa-linkedin"></i></a>
                     <a href="https://www.instagram.com/_.purva_29/" target="_blank_"><i class="fa fa-instagram"></i></a>
                     <a href="https://github.com/purva2906" target="_blank_"><i class="fa fa-github"></i></a>
                 </span>
@@ -87,7 +481,8 @@
                 <h3>Vijeta Chavhan</h3>
                 <h5>Creative Subordinate</h5>
                 <span>
-                    <a href="https://www.linkedin.com/in/vijeta-chavhan-8594171a0/" target="_blank_"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/vijeta-chavhan-8594171a0/" target="_blank_"><i
+                            class="fa fa-linkedin"></i></a>
                     <a href="https://www.google.com" target="_blank_"><i class="fa fa-instagram"></i></a>
                     <a href="https://github.com/vijeta-2000" target="_blank_"><i class="fa fa-github"></i></a>
                 </span>
@@ -110,7 +505,8 @@
                 <h3>Mandar Gajbhiye</h3>
                 <h5>Open Source Lead</h5>
                 <span>
-                    <a href="https://www.linkedin.com/in/mandar-gajbhiye-0862aa15a/" target="_blank_"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/mandar-gajbhiye-0862aa15a/" target="_blank_"><i
+                            class="fa fa-linkedin"></i></a>
                     <a href="https://www.google.com" target="_blank_"><i class="fa fa-instagram"></i></a>
                     <a href="https://github.com/Mandar-Gajbhiye15" target="_blank_"><i class="fa fa-github"></i></a>
                 </span>
@@ -120,8 +516,10 @@
                 <h3>Siddhi Bhanushali</h3>
                 <h5>Open Source Subordinate</h5>
                 <span>
-                    <a href="https://www.linkedin.com/in/siddhi-bhanushali-4178591b2/" target="_blank_"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/siddhibhanushali1234/" target="_blank_"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/siddhi-bhanushali-4178591b2/" target="_blank_"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/siddhibhanushali1234/" target="_blank_"><i
+                            class="fa fa-instagram"></i></a>
                     <a href="https://github.com/siddhi-244" target="_blank_"><i class="fa fa-github"></i></a>
                 </span>
             </div>
@@ -133,7 +531,8 @@
                 <h3>Mayuri Gaikwad</h3>
                 <h5>Management Lead</h5>
                 <span>
-                    <a href="https://www.linkedin.com/in/mayuri-gaikwad-b6b770209/" target="_blank_"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/mayuri-gaikwad-b6b770209/" target="_blank_"><i
+                            class="fa fa-linkedin"></i></a>
                     <a href="https://www.google.com" target="_blank_"><i class="fa fa-instagram"></i></a>
                     <a href="https://www.google.com" target="_blank_"><i class="fa fa-github"></i></a>
                 </span>
@@ -166,7 +565,8 @@
                 <h3>Chaitali shetty</h3>
                 <h5>Technical Lead</h5>
                 <span>
-                    <a href="https://www.linkedin.com/in/chaitali-shetty-b198491b4/" target="_blank_"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/chaitali-shetty-b198491b4/" target="_blank_"><i
+                            class="fa fa-linkedin"></i></a>
                     <a href="https://www.google.com" target="_blank_"><i class="fa fa-instagram"></i></a>
                     <a href="https://github.com/Chaitalishetty" target="_blank_"><i class="fa fa-github"></i></a>
                 </span>
@@ -176,7 +576,8 @@
                 <h3>Bhumika Jadhav</h3>
                 <h5>Technical Subordinate</h5>
                 <span>
-                    <a href="https://www.linkedin.com/in/bhumika-69j/" target="_blank_"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/bhumika-69j/" target="_blank_"><i
+                            class="fa fa-linkedin"></i></a>
                     <a href="https://www.google.com" target="_blank_"><i class="fa fa-instagram"></i></a>
                     <a href="https://github.com/Bhumika-GSD" target="_blank_"><i class="fa fa-github"></i></a>
                 </span>
@@ -199,7 +600,8 @@
                 <h3>Aman Roy</h3>
                 <h5>Content Subordinate</h5>
                 <span>
-                    <a href="https://www.linkedin.com/in/aman-roy-00428b213/" target="_blank_"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/aman-roy-00428b213/" target="_blank_"><i
+                            class="fa fa-linkedin"></i></a>
                     <a href="https://www.google.com" target="_blank_"><i class="fa fa-instagram"></i></a>
                     <a href="https://www.google.com" target="_blank_"><i class="fa fa-github"></i></a>
                 </span>
@@ -207,9 +609,10 @@
         </div>
     </div>
 </body>
-<script>    
-AOS.init({
-  duration: 1200,
-})
+<script>
+    AOS.init({
+        duration: 1200,
+    })
 </script>
+
 </html>

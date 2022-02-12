@@ -574,7 +574,6 @@ h1 {
   border-bottom-right-radius: 8px;
 }
 #team_img img{
-  opacity: .6;
   box-shadow: 0px 0px 10px black;
 }
 #team_img:hover{

@@ -223,7 +223,7 @@ nav {
 }
 .header {
   display: flex;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .header {
   font-family: 'Dancing Script', cursive;

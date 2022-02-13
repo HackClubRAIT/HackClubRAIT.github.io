@@ -225,6 +225,7 @@ nav {
 }
 .header {
   display: flex;
+  text-decoration: none !important;
 }
 .header {
   font-family: 'Dancing Script', cursive;
@@ -440,6 +441,7 @@ h1 {
   text-align: center;
   transform: translateY(100px);
 }
+
 .team img {
   width: auto;
   height: 200px;
@@ -540,13 +542,23 @@ h1 {
 .team .row {
   justify-content: space-evenly;
 }
+.team h1{
+  text-shadow: 0px 0px 15px #eb3750;
+}
 #team_img {
-  box-shadow: 1px 2px 4px 0px var(--red);
+  box-shadow: 4px 4px 4px rgba(75, 74, 74, 0.795);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.829);
+  border: none;
   margin: 20px;
   justify-content: center;
   text-align: center;
   background-color: white;
+  background: linear-gradient(#eb3755dc,#2b2a2aee);
+  color: white;
+  border-radius: 10px;
   width: auto;
+  z-index: 99999;
+  padding-bottom: 5px;
 }
 #team_img span {
   display: grid;
@@ -555,11 +567,36 @@ h1 {
   top: 0px;
   left: 100%;
   background-color: var(--orange);
+  background-color: #4a88d547;
   padding: 10px;
+  transform: translateX(-40px);
+  visibility: hidden;
+  z-index: -2999;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+#team_img img{
+  box-shadow: 0px 0px 10px black;
+}
+#team_img:hover{
+  transform: scale(1.1);
+  border-top-right-radius: 0px !important;
+
+}
+#team_img:hover>span{
+  visibility: visible;
+  transform: translateX(0px) ;
+
 }
 #team_img i {
   font-size: 20px;
-  color: var(--grey);
+  color: white;
+}
+#team_img i:hover{
+  transform: scaleX(1.05);
+}
+#team_img h3,#team_img h5{
+  text-shadow: 6px 6px 10px black;
 }
 #contributor {
   padding: 30px;
@@ -795,40 +832,41 @@ h1 {
 }
 
 #team_img .fa-linkedin:hover{
-  background: #f09433; 
-  background: -moz-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  /* background: -moz-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
   background: -webkit-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
-  background: linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%);  */
+  background-color: #0077b5;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
   transition: 0.9s;
-  transform: rotateX(360deg);
+  transform: scaleX(1.4) ;
 }
 #team_img .fa-instagram:hover{
-  background: #f09433; 
   background: -moz-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
   background: -webkit-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
-  background: linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  /* background: linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%);  */
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
   transition: 0.9s;
-  transform: rotate(360deg);
+  transform: scale(1.4);
 }
 #team_img .fa-github:hover{
-  background: #f09433; 
-  background: -moz-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  /* background: -moz-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
   background: -webkit-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
   background: linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
+  background: linear-gradient(45deg,#4078c0,#6e5494, #bd2c00, #c9510c, #6cc644, #fafafa); */
+  background-color: #2b2a2a;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
   transition: 0.9s;
-  transform: rotateY(360deg);
+  transform: scale(1.4);
 }
 
 #contact_form a:hover {
@@ -907,6 +945,7 @@ h1 {
     flex-wrap: wrap;
   }
 }
+
 @media (max-width: 768px) {
   html {
     overflow-x: hidden;

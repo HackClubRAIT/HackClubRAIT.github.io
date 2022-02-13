@@ -763,11 +763,12 @@ h1 {
   
 }
 #contact_us {
-  background: #252429;
+  background: #cabef7;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  animation: ease-in;
   flex-wrap: wrap;
   /* width: 100%; */
   padding: 20px;
@@ -781,6 +782,7 @@ h1 {
   align-items: center;
   text-align: center;
   flex-wrap: nowrap;
+  animation: ease-in;
 }
 
 #contact_form form {
@@ -795,6 +797,7 @@ h1 {
   border-radius: 10px;
   padding: 15px;
   background: white;
+  animation: ease-in;
   filter: drop-shadow(2px 4px 10px black);
 }
 
@@ -805,6 +808,7 @@ h1 {
   opacity: 0.9;
   width: 100%;
   max-width: 400px;
+  animation: both;
 }
 
 #contact_us h1{
@@ -814,7 +818,7 @@ h1 {
 
 #contact_form input:focus {
   opacity: 1;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(199, 105, 105);
 }
 
 #contact_form button {
@@ -826,7 +830,7 @@ h1 {
     width: 290px;
 } */
 #contact_form a {
-  color: gray;
+  color: rgb(191, 109, 202);
   font-size: 40px;
   margin: 20px;
 }

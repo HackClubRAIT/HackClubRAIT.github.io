@@ -345,13 +345,12 @@ h1 {
   width: 55px;
   height: 55px;
   line-height: 55px;
-  margin: 0 10px;
+  margin: 0 10px !important;
   text-align: center;
   cursor: pointer;
   float: left;
   transition: all 0.5s ease;
 }
-
 
 .wrapper ul li .fa {
   margin-top: 20px;
@@ -401,12 +400,33 @@ h1 {
   text-shadow: 0 0 15px orangered;
   transition: all 0.5s ease;
 }
+
+/*discord*/
+.wrapper ul li:hover .discord{
+  transition: all 0.5s ease;
+
+}
+.wrapper ul li:hover .fa-discord{
+  color: #0056b3;
+  text-shadow: 0 0 15px #0056b3;
+  transition: all 0.5s ease;
+}
+
 .wrapper{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+@media  screen and (max-device-width:550px) {
+  .wrapper ul li .fa,.wrapper ul li .fab{
+    font-size: 30px !important;
+  }
+  .wrapper ul li{
+    margin-left: 4px;
+    margin-right: 4px;
+  }
 
+}
 @media (max-width: 890px) {
   #hackclub {
     font-size: 8em;

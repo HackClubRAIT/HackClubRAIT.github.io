@@ -630,6 +630,7 @@ h1 {
 #contributor .userBlock {
     padding-bottom: 15px;
     /* border: 2px solid var(--red); */
+    border:none;
     border-radius: 10px;
     margin: 10px;
     display: flex;
@@ -644,7 +645,7 @@ h1 {
     transition: all 0.3s ease-in-out;
     box-shadow:inset 0px 0px 15px black,
                0px 0px 15px black !important;
-    background: linear-gradient(#eb3750,#1b1b1b00);
+    background: linear-gradient(#eb3755dc,#d46868ee);
 
 }
 
@@ -652,7 +653,6 @@ h1 {
 #contributor .userBlock:hover {
   transform: scale(1.04);
   box-shadow: 0px 0px 20px black !important;
-  background: linear-gradient(#2b2a2a00,#eb3755ec);
   color: white;
 }
 
@@ -670,17 +670,14 @@ h1 {
   color: white;
   margin: 0;
   margin-right: 10px;
-  /* background-color: rgba(255, 255, 255, 0.1);*/
-  /* box-shadow: 0px 0px 15px black;  */
   border-radius: 5%;
-  /* background-color: rgba(0, 0, 0, 0.2); */
 
 }
 
 #contributor img {
   height: 180px;
   width: auto;
-  border-radius: 8%;
+  border-radius: 50%;
   margin: 5px;
   box-shadow: 0px 0px 15px black;
              

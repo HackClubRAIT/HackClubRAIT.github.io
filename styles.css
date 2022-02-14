@@ -1118,3 +1118,17 @@ and (orientation: landscape) {
     width: 50%;
   }
 }
+
+/* navigate to top button */
+#buttontop
+{
+  background: #fd0054;
+  outline: none;
+  border: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+}

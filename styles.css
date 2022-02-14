@@ -629,8 +629,7 @@ h1 {
 
 #contributor .userBlock {
     padding-bottom: 15px;
-    /* border: 2px solid var(--red); */
-    border:none;
+    border: 2px solid var(--red);
     border-radius: 10px;
     margin: 10px;
     display: flex;
@@ -645,7 +644,7 @@ h1 {
     transition: all 0.3s ease-in-out;
     box-shadow:inset 0px 0px 15px black,
                0px 0px 15px black !important;
-    background: linear-gradient(#eb3755dc,#d46868ee);
+   
 
 }
 
@@ -654,6 +653,7 @@ h1 {
   transform: scale(1.04);
   box-shadow: 0px 0px 20px black !important;
   color: white;
+  background: linear-gradient(#eb3755dc,#d46868ee);
 }
 
 #contributor .userBlock h4 {

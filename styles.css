@@ -783,11 +783,12 @@ h1 {
   
 }
 #contact_us {
-  background: #252429;
+  background: #252429;;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  animation: ease-in;
   flex-wrap: wrap;
   /* width: 100%; */
   padding: 20px;
@@ -801,6 +802,7 @@ h1 {
   align-items: center;
   text-align: center;
   flex-wrap: nowrap;
+  animation: ease-in;
 }
 
 #contact_form form {
@@ -815,27 +817,59 @@ h1 {
   border-radius: 10px;
   padding: 15px;
   background: white;
+  animation: ease-in;
   filter: drop-shadow(2px 4px 10px black);
 }
-
-#contact_form input {
-  outline: none;
+.custom-field{
+  position: relative;
+  font-size: 14px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+.custom-field input{
   border: none;
-  border-bottom: 2px solid var(--red);
-  opacity: 0.9;
-  width: 100%;
-  max-width: 400px;
+  -webkit-appearance: none;
+  -ms-appearence: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #e9e7e7;
+  padding: 12px;
+  border-radius: 3px;
+  width: 350px;
+  outline: none;
+  font-size: 14px;
+}
+.custom-field .placeholder{
+  position: absolute;
+  left: 15px;
+  top: calc(50% + 10px);
+  transform: translateY(-50%);
+  color: rgb(0, 0, 0);
+  transition: 
+      top 0.3s ease,  
+      font-size 0.3s ease,
+      color 0.3s ease;
+      background-color: #e9e7e7;
+}
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder{
+  top: 10px;
+  font-size: 12px;
+  color: #000000;
+  background-color: #ffffff
 }
 
-#contact_us h1{
+/* s */
+
+/* #contact_us h1{
   filter: drop-shadow(2px 4px 10px black);
   font-weight: bold;
-}
+} */
 
-#contact_form input:focus {
+/* #contact_form input:focus {
   opacity: 1;
-  border-bottom: 2px solid black;
-}
+  border-bottom: 2px solid rgb(199, 105, 105);
+} */
 
 #contact_form button {
   width: 100%;
@@ -846,7 +880,7 @@ h1 {
     width: 290px;
 } */
 #contact_form a {
-  color: gray;
+  color: rgb(191, 109, 202);
   font-size: 40px;
   margin: 20px;
 }

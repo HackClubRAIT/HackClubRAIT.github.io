@@ -628,10 +628,10 @@ h1 {
 }
 
 #contributor .userBlock {
-    padding: 15px;
-    border: 2px solid var(--red);
+    padding-bottom: 15px;
+    /* border: 2px solid var(--red); */
     border-radius: 10px;
-    margin: 5px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -642,27 +642,49 @@ h1 {
     width: 100%;
     color: white;
     transition: all 0.3s ease-in-out;
+    box-shadow:inset 0px 0px 15px black,
+               0px 0px 15px black !important;
+    background: linear-gradient(#eb3750,#1b1b1b00);
+
 }
 
+ 
 #contributor .userBlock:hover {
-  background: rgba(235, 55, 80, 0.6);
+  transform: scale(1.04);
+  box-shadow: 0px 0px 20px black !important;
+  background: linear-gradient(#2b2a2a00,#eb3755ec);
+  color: white;
 }
 
+#contributor .userBlock h4 {
+  text-shadow: 6px 6px 10px black;
+}
 #contributor .userBlock p {
   margin-bottom: 5px;
+  text-shadow: 6px 6px 10px black;
+
 }
 
 #contributor a {
   text-decoration: none;
   color: white;
   margin: 0;
+  margin-right: 10px;
+  /* background-color: rgba(255, 255, 255, 0.1);*/
+  /* box-shadow: 0px 0px 15px black;  */
+  border-radius: 5%;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+
 }
 
 #contributor img {
-  height: 160px;
+  height: 180px;
   width: auto;
-  border-radius: 50%;
+  border-radius: 8%;
   margin: 5px;
+  box-shadow: 0px 0px 15px black;
+             
+
 }
 /* #project_section{
   width: 100vw;
@@ -990,6 +1012,9 @@ h1 {
     flex: 50%;
     max-width: 50%;
   }
+  .contributor_svg_section{
+    padding-top: 20% !important;
+  }
 }
 @media (max-width: 490px) {
   #hackclub {
@@ -1037,11 +1062,122 @@ h1 {
     /*flex-direction: column-reverse;*/
     justify-content: center;
   }
+  .contributor_text h2{
+    font-size: 38px !important;
+  }
+  .contributor_text h4{
+    font-size: 27px !important;
+  }
 }
 @media (max-width: 575px) {
   #contact_us {
     transform: translateY(9%);
     height: 100%;
+  }
+  #project_svg_section{
+    padding-top: 13% !important; 
+  }
+  .contributor_text h2{
+    font-size: 2rem !important;
+  }
+  .contributor_text h4{
+    font-size: 1rem !important;
+  }
+  .contributor_svg_section svg{
+    width: 65% !important;
+  }
+  .contributor_text{
+    margin-left: 60px !important;
+  }
+  .project_svg_text h4{
+    font-size: 25px !important;
+  }
+ 
+}
+@media (max-width:440px){
+  #project_svg_section svg{
+    width: 75% !important;
+  }
+  .logo_header{
+    font-size: 21px !important;
+    padding-left: 7px !important;
+    padding-top: 14px !important;
+  }
+  #project_svg_section{
+    padding-top: 19% !important; 
+  }
+  .project_svg_text{
+    margin-right: 20px;
+  }
+  #project_svg_section svg{
+    margin-top: 70px !important;
+  }
+  .project_svg_text p{
+    display: none !important;
+  }
+  .team_svg_section{
+    padding-top: 25% !important;
+  }
+  /* .contributor_text h2{
+    font-size: 1.4rem;
+  }
+  .contributor_text h4{
+    font-size: .8rem;
+  } */
+  .contributor_svg_section svg{
+    width: 80% !important;
+  }
+  .contributor_text h2{
+    font-size: 27px !important;
+  }
+}
+.contributor_text{
+  padding-top: 9%;
+}
+.contributor_text h2{
+  color: white !important;
+  font-family: "Londrina Outline",cursive;
+  font-size: 3rem ;
+}.contributor_text h4{
+  color: white !important;
+  font-family: cursive;
+  font-size: 2rem ;
+}
+.contributor_header{
+  color: #eb3750;
+  font-family: "Londrina Outline",cursive;
+  text-align: center;
+  position: relative;
+  top: 75px;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px #eb3750;
+  margin-bottom: 0px;
+}
+@media (max-width:300px){
+  .project_svg_text h4{
+    font-size: 25px !important;
+  }
+  .team_svg_section .team_text_build h4{
+    display: none !important; 
+  }
+  .contributor_text h4{
+    display: none !important;
+  }
+  .contributor_svg_section svg{
+    width: 100% !important;
+  }
+  .contributor_text h2{
+    font-size: 20px !important;
+  }
+  .contributor_text h4{
+    display: none;
+  }
+  .contributor_svg_section{
+    padding-top: 24% !important;
+  }
+  #contributor .userBlock a img{
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -1085,7 +1221,7 @@ h1 {
   width: 0%;
 }
 
- @media screen and (max-device-width: 635px)
+@media screen and (max-device-width: 635px)
 and (orientation: landscape) {
   ::-webkit-scrollbar {
     display: none;

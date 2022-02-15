@@ -1132,3 +1132,12 @@ and (orientation: landscape) {
   width: 50px;
   border-radius: 15px;
 }
+
+.disappear {
+  opacity:0;
+ 
+}
+.appear {
+  opacity:1;
+
+}

@@ -207,11 +207,13 @@
         <h2>Let’s come together and learn, interact, and grow. 💻 </h2>
         </div><br>
     </div>
+      <div id="navtbut" class="disappear">
       <a href = "#top">
         <button id = "buttontop">
         <i class = "material-icons">arrow_upward</i>  
         </button>
       </a>
+            </div>
     <footer>
         <div class="footer">
             <div class="column1">
@@ -276,5 +278,21 @@
     document.getElementById("myBar").style.width = scrolled + "%";
     }
     </script>
+    <script>
+      navtbut = document.getElementById("navtbut");
+
+var navToTop = function () {
+    var y = window.scrollY;
+    if (y >= 220) {
+        navtbut.className = "appear"
+    } 
+    else {
+        navtbut.className = "disappear"
+    }
+};
+
+window.addEventListener("scroll", navToTop);
+    </script>
+
 <!-- <script src="burger.js"></script> -->
 </html>

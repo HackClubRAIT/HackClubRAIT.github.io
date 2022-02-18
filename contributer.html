@@ -444,30 +444,55 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <div class="contributor_bar">
     <h4 class="contributor_header"> Our Contributors</h4>
+    <input type="text" id="search" placeholder="Find a Contributor"></div>
+
     <div id="contributor" data-aos="zoom-out-up">
     </div>
 </body>
 <script>
-    const getUsers = () => {
-        const owner = 'HackClubRAIT',
-            repo = 'HackClubRAIT-Website';
-        axios
-            .get(
-                `https://api.github.com/repos/${owner}/${repo}/contributors`
-            )
-            .then((response) => {
-                var div = document.getElementById("contributor");
-                const users = response.data;
-                img_id = users.map(u => u.id);
-                img_user = users.map(u => u.login);
-                for (let i = 0; i < img_id.length; i++) {
-                    div.innerHTML += `<div class="userBlock"><a href="https://github.com/${img_user[i]}" target="_blank_"><img src="https://avatars.githubusercontent.com/u/${img_id[i]}"/></a><div><h4>@${img_user[i]}</h4><p>Contributions: ${users[i].contributions}</p></div></div>`;
-                }
-            })
-            .catch((error) => console.error(error));
+    const contributorBlockContainer = document.getElementById('contributor');
+    const searchBar = document.getElementById("search");
+    // console.log(searchBar)
+    let contributorsInfoResponse = [];
+    // console.log(contributorsInfoResponse)
+
+
+    searchBar.addEventListener('keyup', (input_value) => {
+        //to convert the given input into lowercase
+        const inputValue = input_value.target.value.toLowerCase();
+        // console.log(inputValue)
+        const findContributors = contributorsInfoResponse.filter((response) => {
+            return response.login.toLowerCase().includes(inputValue);
+        });
+        showContributorsInfo(findContributors);
+    })
+    const getContributorsInfo = async () => {
+        try {
+            const res = await fetch('https://api.github.com/repos/HackClubRAIT/HackClubRAIT-Website/contributors?per_page=100');
+            contributorsInfoResponse = await res.json();
+            // console.log(contributorsInfoResponse)
+
+            showContributorsInfo(contributorsInfoResponse);
+        } catch (fetch_error) {
+            // return fetch_error
+            console.error(fetch_error);
+        }
     };
-    getUsers();
+
+    const showContributorsInfo = (contribInfos) => {
+        const cardInnerContent = contribInfos
+            .map((info) => {
+                return `
+        <div class="userBlock"><a href="${info.html_url}" target="_blank_"><img src="${info.avatar_url}"/></a><div><h4>@${info.login}</h4><p>Contributions: ${info.contributions}</p></div></div>
+        `;
+            })
+            .join('');
+        contributorBlockContainer.innerHTML = cardInnerContent;
+    };
+
+    getContributorsInfo();
     AOS.init({
         duration: 1200,
     })

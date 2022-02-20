@@ -789,108 +789,6 @@ h1 {
   padding: 20px;
   border-radius: 10px;
 }
-#contact_us {
-  background: #252429;;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  animation: ease-in;
-  flex-wrap: wrap;
-  /* width: 100%; */
-  padding: 20px;
-  transform: translateY(18%);
-}
-
-#contact_form {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-wrap: nowrap;
-  animation: ease-in;
-}
-
-#contact_form form {
-  /* display: grid;
-    grid-gap:20px; */
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 10px;
-  padding: 15px;
-  background: white;
-  animation: ease-in;
-  filter: drop-shadow(2px 4px 10px black);
-}
-.custom-field{
-  position: relative;
-  font-size: 14px;
-  padding-top: 20px;
-  margin-bottom: 5px;
-}
-.custom-field input{
-  border: none;
-  -webkit-appearance: none;
-  -ms-appearence: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: #e9e7e7;
-  padding: 12px;
-  border-radius: 3px;
-  width: 350px;
-  outline: none;
-  font-size: 14px;
-}
-.custom-field .placeholder{
-  position: absolute;
-  left: 15px;
-  top: calc(50% + 10px);
-  transform: translateY(-50%);
-  color: rgb(0, 0, 0);
-  transition: 
-      top 0.3s ease,  
-      font-size 0.3s ease,
-      color 0.3s ease;
-      background-color: #e9e7e7;
-}
-.custom-field input:valid + .placeholder,
-.custom-field input:focus + .placeholder{
-  top: 10px;
-  font-size: 12px;
-  color: #000000;
-  background-color: #ffffff
-}
-
-/* s */
-
-/* #contact_us h1{
-  filter: drop-shadow(2px 4px 10px black);
-  font-weight: bold;
-} */
-
-/* #contact_form input:focus {
-  opacity: 1;
-  border-bottom: 2px solid rgb(199, 105, 105);
-} */
-
-#contact_form button {
-  width: 100%;
-  max-width: 400px;
-  margin: 10px 0;
-}
-/* .btn{
-    width: 290px;
-} */
-#contact_form a {
-  color: rgb(191, 109, 202);
-  font-size: 40px;
-  margin: 20px;
-}
 
 #team_img .fa-linkedin:hover {
   /* background: -moz-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
@@ -952,10 +850,6 @@ h1 {
   transform: scale(1.4);
 }
 
-#contact_form a:hover {
-  color: var(--red);
-}
-
 .form-control-lg {
   min-height: calc(1.5em + 1rem + 2px);
   padding: 0.5rem 1rem;
@@ -1000,19 +894,7 @@ h1 {
   color: #f9713d;
   background: white;
 }
-@media (max-width: 1300px) {
-  #contact_form {
-    flex-wrap: wrap;
-  }
-}
-@media (min-width: 1300px) {
-  #contact_form {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 1 0 50%;
-    max-width: 63%;
-  }
-}
+
 @media (max-width: 1150px) {
   .navbar ul li {
     padding: 12px !important;
@@ -1105,10 +987,6 @@ h1 {
   }
 }
 @media (max-width: 1000px) {
-  #contact_us {
-    /*flex-direction: column-reverse;*/
-    justify-content: center;
-  }
   .contributor_text h2{
     font-size: 38px !important;
   }
@@ -1117,10 +995,6 @@ h1 {
   }
 }
 @media (max-width: 575px) {
-  #contact_us {
-    transform: translateY(9%);
-    height: 100%;
-  }
   #project_svg_section{
     padding-top: 13% !important; 
   }
@@ -1353,4 +1227,181 @@ h1 {
 .appear {
   opacity:1;
 
+}
+
+
+/* Contact Section */
+
+section#contact div.contact {
+  position: relative;
+  margin: 10rem auto;
+}
+
+div.contact div.contact_title {
+  margin: 4rem;
+  position: relative;
+}
+
+div.contact div.contact_title::after {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  bottom: 0;
+  height: 100%;
+  width: 6px;
+  border-radius: 4px;
+  background: #dc3545;
+}
+
+div.contact div.contact_title h1 {
+  margin: 1rem auto;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;;
+  letter-spacing: 0.2px;
+}
+
+div.contact div.contact_title h2 {
+  margin: 1rem auto;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;;
+}
+
+div.contact div.contact_form {
+  margin: 4rem 1rem;
+  position: relative;
+  background: #f7fafc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+div.contact div.contact_form form {
+  margin: auto;
+  padding: 1rem;
+  position: relative;
+}
+
+div.contact div.contact_form form .input-group {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+div.contact div.contact_form form .input-group label {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #495464;
+  letter-spacing: 0.5px;
+}
+
+div.contact div.contact_form form .input-group input,
+div.contact div.contact_form form .input-group textarea {
+  width: 100%;
+  font-size: 1.2rem;
+  color: #495464;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #9ba4b4;
+  letter-spacing: 1px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+div.contact div.contact_form form .input-group input:focus,
+div.contact div.contact_form form .input-group textarea:focus {
+  border-bottom: 2px solid #dc3545;
+}
+
+div.contact div.contact_form form button.btn-submit {
+  margin: 1rem 1rem 0.5rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background: #dc3545;
+  border-radius: 2px;
+  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
+}
+
+div.contact div.contact_form form button.btn-submit:hover {
+  background: #d32535;
+  transition:  all 0.3s linear;
+}
+
+div.contact div.contact_form .follow {
+  padding: 1rem 2.5rem;
+  position: relative;
+  background: #dc3545;
+}
+
+div.contact div.contact_form .follow h3 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+div.contact div.contact_form .follow img {
+  margin: 2rem 0;
+  width: 80%;
+  height: auto;
+}
+
+div.contact div.contact_form .follow .contact_link {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+div.contact div.contact_form .follow .contact_link a {
+  margin: 1rem 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+div.contact div.contact_form .follow .contact_link a i {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  vertical-align: bottom;
+}
+
+div.contact div.contact_form .follow .contact_link a span {
+  margin: auto 0.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+div.contact div.contact_form .follow .social_link {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div.contact div.contact_form .follow .social_link a {
+  margin: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+div.contact div.contact_form .follow .social_link a i {
+  margin: auto;
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+
+div.contact div.contact_form .follow .social_link a:hover {
+  transform: scale(1.3);
 }

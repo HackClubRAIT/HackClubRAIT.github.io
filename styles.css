@@ -1364,6 +1364,24 @@ div.contact div.contact_form .follow .social_link a:hover {
 
 /* Blog Section */
 
+.section-title {
+	margin-top: 10rem;
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #ffffff;
+	letter-spacing: 0.2px;
+	text-align: center;
+}
+
+.underline {
+	height: 0.4rem;
+	width: 5rem;
+	border-radius: 4px;
+	background: #dc3545;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .card {
 	position: relative;
 	margin: 0.5rem 1rem;

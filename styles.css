@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
@@ -1368,6 +1369,7 @@ div.contact div.contact_form .follow .social_link a:hover {
 	margin-top: 10rem;
 	font-size: 2.5rem;
 	font-weight: 600;
+  font-family: "Poppins", sans-serif;
 	color: #ffffff;
 	letter-spacing: 0.2px;
 	text-align: center;
@@ -1403,6 +1405,14 @@ div.contact div.contact_form .follow .social_link a:hover {
 
 .card h6 {
 	font-size: 22px;
+  font-family: "Poppins", sans-serif;
 	margin: 1.2rem 0 1rem;
 	color: #dc3545;
+}
+
+p {
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+	line-height: 25px;
+	color: #495464;
 }

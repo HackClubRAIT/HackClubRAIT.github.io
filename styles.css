@@ -1403,10 +1403,14 @@ div.contact div.contact_form .follow .social_link a:hover {
 	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12), 0px 8px 10px -7px rgba(0, 0, 0, 0.20);
 }
 
+.card > img:hover {
+	transform: translateY(-50px);
+}
+
 .card h6 {
 	font-size: 22px;
   font-family: "Poppins", sans-serif;
-	margin: 1.2rem 0 1rem;
+	margin: 1.2rem 0 0;
 	color: #dc3545;
 }
 
@@ -1415,4 +1419,14 @@ p {
 	font-family: "Poppins", sans-serif;
 	line-height: 25px;
 	color: #495464;
+}
+
+.btn-danger {
+	margin: 0.5rem 0 0.5rem;
+	font-family: "Poppins", sans-serif;
+	box-shadow: 0 2px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+}
+
+.btn-danger:hover {
+	box-shadow: 0 3px 6px rgba(255, 0, 0, 0.4);
 }

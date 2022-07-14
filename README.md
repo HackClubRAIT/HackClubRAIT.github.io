@@ -1,4 +1,3 @@
-![134015433-aec59d97-a8d7-407a-88fd-5e3edebc2b77](https://user-images.githubusercontent.com/69195262/135374166-a56824f9-0930-4346-a2f2-2410abc36180.png)
 
 
 # This is the official website of HackClub RAIT
@@ -75,5 +74,3 @@ git push -u origin <your_branch_name>
 
 **15** Voila! You have made a PR to the HackClubRAIT-Website. Sit back patiently and relax while your PR is reviewed
 
-# For JWOC participants ❗
-Issues will be assigned from 1st February 2022 based on first come first serve. PRs or Comments before that will be treated as invalid

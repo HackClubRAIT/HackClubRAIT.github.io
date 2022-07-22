@@ -12,6 +12,6 @@ Before you create this PR, confirm all the requirements listed below by checking
 -   [ ] I have you tested the code before submission.
 -   [ ] I have commented my code, particularly in hard-to-understand areas.
 -   [ ] My changes generates no new warnings.
--   [ ] I'm JWOC contributor.
+-   [ ] I'm HSOC contributor.
 
 ##  Screenshots (if any)

@@ -772,14 +772,20 @@ h1 {
 .owner {
   text-decoration: none;
 }
-
+/*-----------------opportunity-----------------*/
 .opportunity .row {
   display: flex;
   justify-content: center;
+ 
 }
 .opportunity {
   transform: translateY(100px);
-  padding: 50px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    overflow-x: hidden;
+  
 }
 #opp_card {
   background-color: white;
@@ -904,6 +910,17 @@ h1 {
   .contributor_svg_section{
     padding-top: 20% !important;
   }
+  /*-----------------opportunity-----------------*/
+  .opportunity .row{
+    width: 20rem!important;
+  }
+  .opportunity {
+   
+    justify-content: center;
+    align-items: center;
+   
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 490px) {
   #hackclub {
@@ -949,6 +966,19 @@ h1 {
   .contributor_text h4{
     font-size: 27px !important;
   }
+
+  /*-----------------opportunity-----------------*/
+  .opportunity {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .opportunity .row{
+    width: 80%!important;
+    padding: 1.5rem!important;
+  }
 }
 @media (max-width: 575px) {
   #project_svg_section{
@@ -968,6 +998,11 @@ h1 {
   }
   .project_svg_text h4{
     font-size: 25px !important;
+  }
+  /*-------opportunity-------*/
+  .opportunity .row{
+    width: 25rem!important;
+    padding: 0 1rem!important;
   }
  
 }
@@ -1006,6 +1041,11 @@ h1 {
   }
   .contributor_text h2{
     font-size: 27px !important;
+  }
+  /*-----------------opportunity-----------------*/
+  .opportunity .row{
+    width: 20rem!important;
+    padding: 0 1rem!important;
   }
 }
 .contributor_text{
@@ -1082,15 +1122,14 @@ h1 {
   #contributor .userBlock a img{
     width: 100%;
   }
+  /*-----------------opportunity-----------------*/
+  .opportunity .row{
+    width: 16rem!important;
+    padding: 1.5rem!important;
+  }
 }
 @media (min-width: 768px) {
-  .opportunity {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    overflow-x: hidden;
-  }
+  
   .btn {
     width: max-content;
     height: max-content;
